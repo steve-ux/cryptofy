@@ -1,7 +1,100 @@
+/* ROOT */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jost:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fugaz+One&display=swap');
+
+@font-face {
+  font-family: "Gilroy Heavy Italic";
+  src: url("./assets/fonts/Gilroy-HeavyItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat Black Italic";
+  src: url("./assets/fonts/Montserrat-BlackItalic.otf");
+}
+
+* {
+  --primary-color: #FEE600;
+  --primary-font: "Montserrat Black Italic";
+  --secondary-font: "Gilroy Heavy Italic";
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: darkolivegreen;
+  background-color: rgb(222, 238, 2);
   padding: 2rem;
+}
+
+/* HOME */
+
+/* .titleHome {
+  font-family: 'Anton', sans-serif;
+  
+} */
+
+/* INICIO */
+
+.video {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 40%;
+  height: 120%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-Index: -1;
+}
+.titleInicio {
+  font-family: "Montserrat Black Italic";
+  color: var(--primary-color);
+  letter-spacing: .1rem;
+  text-align: center;
+  font-size: 4rem;
+}
+.btnInicio {
+  background-color: var(--primary-color);
+  color: black;
+  padding: .5rem;
+  border-radius: 1rem;
+  margin-top: 9rem;
+  border-style: none;
+  cursor: pointer;
+  font-family: "Montserrat Black Italic";
+}
+.containerBtn {
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+.textBtn {
+color: black;
+
+}
+
+/* BITCOIN */
+
+.titleBitcoin {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--secondary-font);
+  font-size: large;
+}
+
+/* Footer */
+
+.containerFooter {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+
+  
 }
