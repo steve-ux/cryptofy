@@ -10,12 +10,20 @@ function Inicio() {
       <video className="video" autoPlay loop muted>
       <source src={Videoloop} type="video/mp4" />
       </video>
-        <h1 className="titleInicio">PORTAL CRIPTO</h1>
+      <span className="spanHome">
+      <h1 className="titleInicio">PORTAL CRIPTO</h1>
+      </span>
+      <p className="parrafoHome">
+          UN ESPACIO EN LA WEB, Y EN ESPAÑOL, PARA INTRODUCIRTE EN LAS
+          PRINCIPALES CRIPTOS DEL MERCADO, SABER SU ORIGEN Y CONOCER SU PRECIO
+          EN TIEMPO REAL.
+        </p>
+        
         <div className="containerBtn">
         <button className="btnInicio">
-          <Link to="/Bitcoin">
+        <a href="#PortalCripto">
             <h2 className="textBtn">VER CRIPTOS</h2>
-          </Link>
+            </a>
         </button>
         </div>        
         <div className="containerFooter">
@@ -23,6 +31,7 @@ function Inicio() {
             <a href="https://www.instagram.com/esteban_instaok/" target="_blank"><img src={LogoInstagram} width="60" alt="Logo Instagram"/></a>
             <a href="https://github.com/steve-ux" target="_blank"><img src={LogoGitHub} width="60" alt="Logo GitHub"/></a>
         </div>
+        {/* <i class="fi fi-br-angle-down"></i> */}
     </div>
   );
 }

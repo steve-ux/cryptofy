@@ -1,8 +1,10 @@
 /* ROOT */
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jost:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fugaz+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jost:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fugaz+One&display=swap");
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css");
 
 @font-face {
   font-family: "Gilroy Heavy Italic";
@@ -14,7 +16,7 @@
 }
 
 * {
-  --primary-color: #FEE600;
+  --primary-color: #fee600;
   --primary-font: "Montserrat Black Italic";
   --secondary-font: "Gilroy Heavy Italic";
 }
@@ -23,7 +25,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(222, 238, 2);
+  background-color: rgb(255, 231, 16);
   padding: 2rem;
 }
 
@@ -41,24 +43,98 @@ body {
   width: 100%;
   left: 50%;
   top: 40%;
-  height: 120%;
+  height: 130%;
   object-fit: cover;
   transform: translate(-50%, -50%);
-  z-Index: -1;
+  z-index: -1;
 }
 .titleInicio {
   font-family: "Montserrat Black Italic";
   color: var(--primary-color);
-  letter-spacing: .1rem;
-  text-align: center;
+  letter-spacing: 0.1rem;
   font-size: 4rem;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 13ch;
+
+  animation: typing 2s steps(13), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
 }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.spanHome {
+  display: flex;
+  justify-content: center;
+}
+i {
+  color: #fee600;
+  font-size: 4rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
 .btnInicio {
   background-color: var(--primary-color);
   color: black;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 1rem;
-  margin-top: 9rem;
+  margin-top: 7rem;
   border-style: none;
   cursor: pointer;
   font-family: "Montserrat Black Italic";
@@ -71,10 +147,82 @@ a {
   text-decoration: none;
 }
 .textBtn {
-color: black;
+  color: black;
+}
+.parrafoHome {
+  font-family: "Gilroy Heavy Italic";
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+/* Main */
 
+.main {
+  display: flex;
+  margin-top: 5.2rem;
+  background-image: url("./assets/fondo-main.png");
+  background-size: cover;
+  margin-bottom: 1.5rem;
+  height: 100vh;
+  width: 95vw;
+}
+.containerMain {
+  display: flex;
+  flex-direction: column;
+}
+.containerCriptos {
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+.criptos {
+  width: 30%;
+  height: 40%;
+  cursor: pointer;
+}
+.criptoBTC {
+  width: 25%;
+  height: 40%;
+  cursor: pointer;
+}
+.criptoETH {
+  width: 25%;
+  height: 40%;
+  cursor: pointer;
+}
+.criptoMana {
+  width: 25%;
+  height: 40%;
+  cursor: pointer;
+}
+.criptoETC {
+  width: 28%;
+  height: 40%;
+  cursor: pointer;
+}
+.textMain {
+  font-family: "Montserrat Black";
+  font-size: 5rem;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: end;
+  margin-right: 3.8rem;
+}
+.parrafoMain {
+  font-family: "Gilroy Heavy Italic";
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
 }
 
+.box {
+  width: 700px;
+  height: 400px;
+  background: #5f5f5f7a;
+  display: flex;
+  justify-content: center;
+  margin-left: 25rem;
+}
 /* BITCOIN */
 
 .titleBitcoin {
@@ -90,11 +238,8 @@ p {
 /* Footer */
 
 .containerFooter {
-  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 12rem;
-
-  
+  margin-top: 7rem;
 }
