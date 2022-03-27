@@ -14,9 +14,13 @@
   font-family: "Montserrat Black Italic";
   src: url("./assets/fonts/Montserrat-BlackItalic.otf");
 }
+/* Posible fondogradiente
 
+1) background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+2) background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+*/
 * {
-  --primary-color: #fee600;
+  --primary-color: #ef233c;
   --primary-font: "Montserrat Black Italic";
   --secondary-font: "Gilroy Heavy Italic";
 }
@@ -25,9 +29,15 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(255, 231, 16);
-  padding: 2rem;
+  padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
+/* a:hover {
+  text-decoration: none;
+} */
 
 /* HOME */
 
@@ -38,19 +48,27 @@ body {
 
 /* INICIO */
 
+/* .inicio {
+  width: 90vw;
+} */
+
+.containerElements {
+  display: flex;
+  flex-direction: column;
+}
 .video {
   position: absolute;
   width: 100%;
   left: 50%;
   top: 40%;
-  height: 130%;
+  height: 120%;
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
 .titleInicio {
   font-family: "Montserrat Black Italic";
-  color: var(--primary-color);
+  color: #ef233c;
   letter-spacing: 0.1rem;
   font-size: 4rem;
   display: block;
@@ -130,11 +148,9 @@ i {
 }
 
 .btnInicio {
-  background-color: var(--primary-color);
-  color: black;
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
   padding: 0.5rem;
   border-radius: 1rem;
-  margin-top: 7rem;
   border-style: none;
   cursor: pointer;
   font-family: "Montserrat Black Italic";
@@ -142,20 +158,21 @@ i {
 .containerBtn {
   display: flex;
   justify-content: center;
+  padding: 1rem;
 }
 a {
   text-decoration: none;
 }
 .textBtn {
-  color: black;
+  color: #000000da;
+  font-size: 1rem;
 }
 .parrafoHome {
   font-family: "Gilroy Heavy Italic";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--primary-color);
   text-align: center;
-  display: flex;
-  align-items: center;
+  padding: 1rem;
 }
 /* Main */
 
@@ -183,13 +200,14 @@ a {
 }
 .criptoBTC {
   width: 25%;
-  height: 40%;
   cursor: pointer;
+  margin-left: 2rem;
 }
 .criptoETH {
   width: 25%;
   height: 40%;
   cursor: pointer;
+  margin-left: 1rem;
 }
 .criptoMana {
   width: 25%;
@@ -200,6 +218,7 @@ a {
   width: 28%;
   height: 40%;
   cursor: pointer;
+  margin-left: 2rem;
 }
 .textMain {
   font-family: "Montserrat Black";
@@ -237,9 +256,14 @@ p {
 
 /* Footer */
 
+footer {
+  background-color: #000000;
+  padding: .5rem;
+  margin-top: 8rem;
+}
+
 .containerFooter {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7rem;
 }
