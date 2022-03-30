@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 function Inicio() {
   return (
+    <>
     <div className="inicio">
       <video className="video" autoPlay loop muted>
       <source src={Videoloop} type="video/mp4" />
@@ -15,17 +16,16 @@ function Inicio() {
       <h1 className="titleInicio">PORTAL CRIPTO</h1>
       </span>
       <p className="parrafoHome">
-          SUMERGITE AL MUNDO CRIPTO.
+          COTIZACIONES, HISTORIA Y MUCHO MÁS.
         </p>
         
         <div className="containerBtn">
-        <button className="btnInicio">
-            <Link to="/Criptos"><h2 className="textBtn">LETS GO!</h2></Link>
-        </button>
+            <Link to="/Criptos"><button className="glow-on-hover" type="button">LETS GO!</button></Link>
         </div>
         </div>
-        <Footer/>
     </div>
+        <Footer/>
+    </>
   );
 }
 

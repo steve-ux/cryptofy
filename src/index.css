@@ -14,13 +14,10 @@
   font-family: "Montserrat Black Italic";
   src: url("./assets/fonts/Montserrat-BlackItalic.otf");
 }
-/* Posible fondogradiente
 
-1) background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
-2) background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
-*/
 * {
   --primary-color: #ef233c;
+  --secondary-color: #1d061a;
   --primary-font: "Montserrat Black Italic";
   --secondary-font: "Gilroy Heavy Italic";
 }
@@ -35,22 +32,14 @@ body {
 a {
   text-decoration: none;
 }
-/* a:hover {
-  text-decoration: none;
-} */
 
-/* HOME */
 
-/* .titleHome {
-  font-family: 'Anton', sans-serif;
-  
-} */
 
 /* INICIO */
 
-/* .inicio {
-  width: 90vw;
-} */
+.inicio {
+  height: 90vh;
+}
 
 .containerElements {
   display: flex;
@@ -147,13 +136,74 @@ i {
   }
 }
 
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: rgb(36, 36, 36);
+  background-color: var(--secondary-color) !important;
+  font-family: var(--primary-font);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
 .btnInicio {
   background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
   padding: 0.5rem;
   border-radius: 1rem;
   border-style: none;
   cursor: pointer;
-  font-family: "Montserrat Black Italic";
+  font-family: var(--primary-font) ;
 }
 .containerBtn {
   display: flex;
@@ -163,86 +213,286 @@ i {
 a {
   text-decoration: none;
 }
-.textBtn {
-  color: #000000da;
-  font-size: 1rem;
-}
 .parrafoHome {
   font-family: "Gilroy Heavy Italic";
   font-size: 1.2rem;
-  color: var(--primary-color);
   text-align: center;
   padding: 1rem;
+  -webkit-text-stroke: 1px red;
+    color: transparent;
 }
+
+
+
 /* Main */
 
-.main {
-  display: flex;
-  margin-top: 5.2rem;
-  background-image: url("./assets/fondo-main.png");
-  background-size: cover;
-  margin-bottom: 1.5rem;
-  height: 100vh;
-  width: 95vw;
-}
-.containerMain {
-  display: flex;
-  flex-direction: column;
-}
-.containerCriptos {
-  margin-left: 4rem;
-  margin-top: 2rem;
-}
-.criptos {
-  width: 30%;
-  height: 40%;
-  cursor: pointer;
-}
-.criptoBTC {
-  width: 25%;
-  cursor: pointer;
-  margin-left: 2rem;
-}
-.criptoETH {
-  width: 25%;
-  height: 40%;
-  cursor: pointer;
-  margin-left: 1rem;
-}
-.criptoMana {
-  width: 25%;
-  height: 40%;
-  cursor: pointer;
-}
-.criptoETC {
-  width: 28%;
-  height: 40%;
-  cursor: pointer;
-  margin-left: 2rem;
-}
-.textMain {
-  font-family: "Montserrat Black";
-  font-size: 5rem;
-  color: var(--primary-color);
-  display: flex;
-  justify-content: end;
-  margin-right: 3.8rem;
-}
-.parrafoMain {
-  font-family: "Gilroy Heavy Italic";
-  font-size: 2rem;
-  color: rgb(0, 0, 0);
-}
 
-.box {
-  width: 700px;
-  height: 400px;
-  background: #5f5f5f7a;
+
+
+.bodyMain
+{
   display: flex;
   justify-content: center;
-  margin-left: 25rem;
+  align-items: center;
+  background: #1d061a
 }
+
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.container .box
+{
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+
+.container .box::before
+{
+  content:' ';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.container .box::after
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+}
+
+.container .box:hover:before,
+.container .box:hover:after
+{
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+  
+}
+
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after
+{
+  background: linear-gradient(315deg, #ffbc00, #ff0058)
+}
+
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after
+{
+  background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after
+{
+  background: linear-gradient(315deg, #4dff03, #00d0ff)
+}
+.container .box:nth-child(4):before,
+.container .box:nth-child(4):after
+{
+  background: linear-gradient(315deg, #ffbc00, #ff0058)
+}
+.container .box:nth-child(5):before,
+.container .box:nth-child(5):after
+{
+  background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+.container .box:nth-child(6):before,
+.container .box:nth-child(6):after
+{
+  background: linear-gradient(315deg, #4dff03, #00d0ff)
+}
+
+.container .box span
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.container .box span::before
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.1s;  
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+}
+
+.container .box:hover span::before
+{
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.container .box span::after
+{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  animation-delay: -1s;
+}
+
+.container .box:hover span:after
+{
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+@keyframes animate
+{
+  0%, 100%
+  {
+    transform: translateY(10px);
+  }
+  
+  50%
+  {
+    transform: translate(-10px);
+  }
+}
+
+.container .box .content
+{
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #fff;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.container .box:hover .content
+{
+  left: -25px;
+  padding: 60px 40px;
+}
+
+.container .box .content h2
+{
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: var(--primary-font);
+}
+
+.container .box .content p
+{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.container .box .content a
+{
+  display: inline-block;
+  font-size: 1.1em;
+  font-family: var(--secondary-font);
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.container .box .content a:hover
+{
+  background: var(--secondary-color);
+  -webkit-text-stroke: 1px red;
+  color: transparent;
+  letter-spacing: 2px;
+  border: 1px solid rgba(255, 0, 88, 0.4);
+  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+.criptoDoge {
+  width: 7vw;
+}
+.criptoBTC {
+  width: 8vw;
+}
+.criptoETH {
+  width: 7vw;
+}
+.criptoMana {
+  width: 8vw;
+}
+.criptoETC {
+  width: 7vw;
+}
+.criptoDai {
+  width: 7vw;
+}
+
+
+
 /* BITCOIN */
+
+
 
 .titleBitcoin {
   font-family: var(--primary-font);
@@ -257,9 +507,8 @@ p {
 /* Footer */
 
 footer {
-  background-color: #000000;
+  background-color: var(--secondary-color);
   padding: .5rem;
-  margin-top: 8rem;
 }
 
 .containerFooter {

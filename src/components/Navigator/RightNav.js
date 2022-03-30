@@ -14,7 +14,8 @@ const Ul = styled.ul`
     text-transform: uppercase;
   }
   li:hover {
-      color: #EF233C73;
+    -webkit-text-stroke: 1px red;
+    color: transparent; 
   }
   a {
       text-decoration: none;
@@ -44,7 +45,7 @@ const RightNav = ({ open }) => {
     <Ul open={open}>
       <Link to="/"><li>INICIO</li></Link>
       <Link to="/Criptos"><li>CRIPTOS</li></Link>
-      <Link to="/Contacto"><li>NOSOTROS</li></Link>
+      <Link to="/AboutUs"><li>SOBRE</li></Link>
     </Ul>
   )
 }
