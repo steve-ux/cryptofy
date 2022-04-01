@@ -7,23 +7,58 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
 
-  li {
-    padding: 10px 20px;
+
+  ul, ol {
+    list-style:none;
+  }
+  
+  .nav > li {
+    float:left;
     font-family: Montserrat Black Italic;
     color: #EF233C;
     text-transform: uppercase;
+    margin-right: 3rem;
   }
-  li:hover {
+  
+  .nav li a {
+    background-color:#000;
+    color:#EF233C;
+    text-decoration:none;
+    padding:8px 5px;
+    display:block;
+  }
+  
+  .nav li a:hover {
     -webkit-text-stroke: 1px red;
     color: transparent; 
   }
+  
+  .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+  }
+  
+  .nav li:hover > ul {
+    display:block;
+  }
+  
+  .nav li ul li {
+    position:relative;
+    margin-left: -2rem;
+    font-family: Montserrat Black Italic;
+    color: #EF233C;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
   a {
       text-decoration: none;
   }
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: white;
+    background-color: black;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -35,17 +70,36 @@ const Ul = styled.ul`
     z-index: 20;
 
     li {
-      color: black;
+      color: white;
+    }
+    .nav li ul {
+      display:none;
+      position:absolute;
+      min-width:140px;
+    }
+    .nav li ul li {
+      position:relative;
     }
   }
 `;
 
 const RightNav = ({ open }) => {
   return (
-    <Ul open={open}>
-      <Link to="/"><li>INICIO</li></Link>
-      <Link to="/Criptos"><li>CRIPTOS</li></Link>
-      <Link to="/AboutUs"><li>SOBRE</li></Link>
+    <Ul open={open} id="menu">
+      <ul className="nav">
+				<li><Link to="/">INICIO</Link></li>
+        <li><Link to="/AboutUs">SOBRE</Link></li>
+				<li><Link to="/Criptos">CRIPTOS</Link>
+					<ul>
+						<li><Link to="/Bitcoin">BTC</Link></li>
+						<li><Link to="/Ethereum">ETH</Link></li>
+						<li><Link to="/Dogecoin">DOGE</Link></li>
+            <li><Link to="/Classic">ETC</Link></li>
+            <li><Link to="/Mana">MANA</Link></li>
+            <li><Link to="/Dai">DAI</Link></li>
+					</ul>
+				</li>				
+			</ul>
     </Ul>
   )
 }

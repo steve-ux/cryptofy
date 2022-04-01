@@ -1,13 +1,13 @@
 import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
-import Api from "../Mana";
+import Api from "../cryptocurrencies/Mana";
 import Mana from "../assets/logo-mana.png";
 
 export default function Decentraland() {
  
   return (
     <>
-    <div className="dashboard-container">
+    <div className="dashboard-containerMana">
     <Navbar/>
       <h1 className="titleCriptos">DECENTRALAND</h1>
       <div className="containerCriptoETH">

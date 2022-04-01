@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import callAPI from "./utils";
+import callAPI from "../utils";
 import Plotly from "plotly.js-dist";
 
 function Classic() {

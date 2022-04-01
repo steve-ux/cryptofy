@@ -13,10 +13,10 @@ function Inicio() {
       <Navbar/>
       <div className="containerElements">
       <span className="spanHome">
-      <h1 className="titleInicio">PORTAL CRIPTO</h1>
+      <h1 className="titleInicio">CRIPTOFY</h1>
       </span>
       <p className="parrafoHome">
-          COTIZACIONES, HISTORIA Y MUCHO MÁS.
+          TU PORTAL CRIPTO. COTIZACIONES, HISTORIA Y MUCHO MÁS.
         </p>
         
         <div className="containerBtn">

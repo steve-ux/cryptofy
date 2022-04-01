@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import callAPI from "./utils";
+import callAPI from "../utils";
 import Plotly from "plotly.js-dist";
 
-function Api() {
+function Mana() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [latestPrice, setLatestPrice] = useState(0);
 
@@ -25,7 +25,7 @@ function Api() {
 
 	const fetchData = async () => {
 		let data = { index: [], price: [], volumes: [] };
-		let result = await callAPI("https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=1&interval=1m");
+		let result = await callAPI("https://api.coingecko.com/api/v3/coins/decentraland/market_chart?vs_currency=usd&days=1&interval=1m");
 		for (const item of result.prices) {
 			data.index.push(item[0]);
 			data.price.push(item[1]);
@@ -121,7 +121,7 @@ function Api() {
 			) : (
 				<>
 					<h2 id='last-price' className='text-center text-primary animate__animated'>
-					Precio actual:	<span>$ {latestPrice} </span> USD
+					Precio actual:	<span>$ {latestPrice}</span> USD
 					</h2>
 					<div id='chart' className='p-0 m-0'></div>
 				</>
@@ -130,4 +130,4 @@ function Api() {
 	);
 }
 
-export default Api;
+export default Mana;

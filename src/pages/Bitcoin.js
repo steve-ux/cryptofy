@@ -1,6 +1,6 @@
 import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
-import Api from "../Bitcoin";
+import Api from "../cryptocurrencies/Bitcoin";
 import Bitcoin from "../assets/logo-bitcoin.png";
 
 export default function BitcoinMain() {
@@ -18,10 +18,11 @@ export default function BitcoinMain() {
       </div>
       <div className="containerText">
     <seccion className="infoCriptos">
-      <h2>La historia de Bitcoin</h2>
-      <p>Ethereum es una plataforma digital que adopta la tecnología de cadena de bloques (blockchain) y expande su uso a una gran variedad de aplicaciones. Ether, su criptomoneda nativa, es la segunda más grande del mercado.</p>
-      <p>La plataforma Ethereum fue creada en 2015 por el programador Vitalik Buterin, de origen ruso-canadiense, con la perspectiva de crear un instrumento para aplicaciones descentralizadas y colaborativas. Ether (ETH), su criptomoneda nativa, es un token que puede ser utilizado en transacciones que usen este software. Como bitcoin, ether existe como parte de un sistema financiero autónomo de pares, libre de intervención gubernamental. También como bitcoin, el valor de ether se disparó en un corto periodo de tiempo.</p>
-      <h3>¿Cómo funciona ether?</h3>
+      <h2>La historia de <a href="https://bitcoin.org/es/" target="_blank" rel="noreferrer">Bitcoin</a></h2>
+      <p>Bitcoin nación en 2008 en medio de una crisis económica que atravesaba el mundo. Su creador o creadores, del que no se sabe existencia, apareció al mundo bajo el seudónimo de Satoshi Nakamoto para proteger su identidad y asegurar el anonimato del proyecto. Su intención fue ser una revolución financiera y cambiar el modo en el que conocíamos las finanzas. Logrando su cometido, hoy Bitcoin, es considerado la moneda del futuro.</p>
+      <p>BTC, como se conoce su abreviatura, usa tecnología peer-to-peer o entre pares para operar sin una autoridad central o bancos; la gestión de las transacciones y la emisión de bitcoins es llevada a cabo de forma colectiva por la red.</p>
+      <p>Bitcoin es de código abierto; su diseño es público, nadie es dueño o controla Bitcoin y todo el mundo puede participar. Por medio de sus muchas propiedades únicas, Bitcoin permite usos interesantes no contemplados por ningún sistema de pagos anterior.</p>
+      <h3>¿Cómo funciona bitcoin?</h3>
       <p>Ether, como otras criptomonedas, utiliza un libro digital compartido donde se registran todas las transacciones. Es de acceso público, completamente transparente y muy difícil de modificar a posteriori.</p>
       <p>Este ‘libro contable digital’ se denomina blockchain o cadena de bloques, y se construye a través del proceso de minería de datos.</p>
       <p>Los mineros son los responsables de verificar grupos de transacciones de ether para formar "bloques" y codificarlos resolviendo complejos algoritmos. Estos algoritmos pueden ser a su vez más o menos difíciles, como forma de mantener cierta constancia en el tiempo de procesamiento de los bloques (alrededor de uno cada 14 segundos).</p>

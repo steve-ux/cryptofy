@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Burger from "./Burger";
 
 const Nav = styled.nav`
-  height: 10vh;
+  height: 11vh;
   width: 100%;
   display: flex;
   justify-content: space-between;

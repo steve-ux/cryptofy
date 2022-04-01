@@ -1,6 +1,6 @@
 import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
-import Api from "../Dai";
+import Api from "../cryptocurrencies/Dai";
 import Dai from "../assets/logo-dai.png";
 
 export default function DaiMain() {

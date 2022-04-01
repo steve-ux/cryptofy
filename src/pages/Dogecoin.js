@@ -1,13 +1,13 @@
 import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
-import Api from "../Dogecoin";
+import Api from "../cryptocurrencies/Dogecoin";
 import Dogecoin from "../assets/logo-dogecoin.png";
 
 export default function DogecoinMain() {
  
   return (
     <>
-    <div className="dashboard-container">
+    <div className="dashboard-containerDoge">
     <Navbar/>
       <h1 className="titleCriptos">DOGECOIN</h1>
       <div className="containerCriptoETH">

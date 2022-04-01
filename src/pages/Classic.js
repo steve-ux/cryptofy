@@ -1,13 +1,13 @@
 import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
-import Api from "../Classic";
+import Api from "../cryptocurrencies/Classic";
 import Classic from "../assets/logo-ethereum-classic.png";
 
 export default function ClassicMain() {
  
   return (
     <>
-    <div className="dashboard-container">
+    <div className="dashboard-containerClassic">
     <Navbar/>
       <h1 className="titleCriptos">ETHEREUM CLASSIC</h1>
       <div className="containerCriptoETH">
