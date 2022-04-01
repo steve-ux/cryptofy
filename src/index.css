@@ -33,8 +33,6 @@ a {
   text-decoration: none;
 }
 
-
-
 /* INICIO */
 
 .inicio {
@@ -151,11 +149,22 @@ i {
 }
 
 .glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -163,12 +172,12 @@ i {
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -181,7 +190,7 @@ i {
 
 .glow-on-hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -192,9 +201,15 @@ i {
 }
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .btnInicio {
@@ -203,7 +218,7 @@ i {
   border-radius: 1rem;
   border-style: none;
   cursor: pointer;
-  font-family: var(--primary-font) ;
+  font-family: var(--primary-font);
 }
 .containerBtn {
   display: flex;
@@ -219,26 +234,19 @@ a {
   text-align: center;
   padding: 1rem;
   -webkit-text-stroke: 1px red;
-    color: transparent;
+  color: transparent;
 }
-
-
 
 /* Main */
 
-
-
-
-.bodyMain
-{
+.bodyMain {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1d061a
+  background: #1d061a;
 }
 
-.container
-{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,8 +254,7 @@ a {
   padding: 40px 0;
 }
 
-.container .box
-{
+.container .box {
   position: relative;
   width: 320px;
   height: 400px;
@@ -258,9 +265,8 @@ a {
   transition: 0.5s;
 }
 
-.container .box::before
-{
-  content:' ';
+.container .box::before {
+  content: " ";
   position: absolute;
   top: 0;
   left: 50px;
@@ -273,9 +279,8 @@ a {
   transition: 0.5s;
 }
 
-.container .box::after
-{
-  content:'';
+.container .box::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 50;
@@ -289,49 +294,40 @@ a {
 }
 
 .container .box:hover:before,
-.container .box:hover:after
-{
+.container .box:hover:after {
   transform: skewX(0deg);
   left: 20px;
   width: calc(100% - 90px);
-  
 }
 
 .container .box:nth-child(1):before,
-.container .box:nth-child(1):after
-{
-  background: linear-gradient(315deg, #ffbc00, #ff0058)
+.container .box:nth-child(1):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(2):before,
-.container .box:nth-child(2):after
-{
-  background: linear-gradient(315deg, #03a9f4, #ff0058)
+.container .box:nth-child(2):after {
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
 }
 
 .container .box:nth-child(3):before,
-.container .box:nth-child(3):after
-{
-  background: linear-gradient(315deg, #4dff03, #00d0ff)
+.container .box:nth-child(3):after {
+  background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
 .container .box:nth-child(4):before,
-.container .box:nth-child(4):after
-{
-  background: linear-gradient(315deg, #ffbc00, #ff0058)
+.container .box:nth-child(4):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 .container .box:nth-child(5):before,
-.container .box:nth-child(5):after
-{
-  background: linear-gradient(315deg, #03a9f4, #ff0058)
+.container .box:nth-child(5):after {
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
 }
 .container .box:nth-child(6):before,
-.container .box:nth-child(6):after
-{
-  background: linear-gradient(315deg, #4dff03, #00d0ff)
+.container .box:nth-child(6):after {
+  background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
 
-.container .box span
-{
+.container .box span {
   display: block;
   position: absolute;
   top: 0;
@@ -342,9 +338,8 @@ a {
   pointer-events: none;
 }
 
-.container .box span::before
-{
-  content:'';
+.container .box span::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -354,13 +349,12 @@ a {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   opacity: 0;
-  transition: 0.1s;  
+  transition: 0.1s;
   animation: animate 2s ease-in-out infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.container .box:hover span::before
-{
+.container .box:hover span::before {
   top: -50px;
   left: 50px;
   width: 100px;
@@ -368,9 +362,8 @@ a {
   opacity: 1;
 }
 
-.container .box span::after
-{
-  content:'';
+.container .box span::after {
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -382,12 +375,11 @@ a {
   opacity: 0;
   transition: 0.5s;
   animation: animate 2s ease-in-out infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   animation-delay: -1s;
 }
 
-.container .box:hover span:after
-{
+.container .box:hover span:after {
   bottom: -50px;
   right: 50px;
   width: 100px;
@@ -395,21 +387,18 @@ a {
   opacity: 1;
 }
 
-@keyframes animate
-{
-  0%, 100%
-  {
+@keyframes animate {
+  0%,
+  100% {
     transform: translateY(10px);
   }
-  
-  50%
-  {
+
+  50% {
     transform: translate(-10px);
   }
 }
 
-.container .box .content
-{
+.container .box .content {
   position: relative;
   left: 0;
   padding: 20px 40px;
@@ -424,29 +413,25 @@ a {
   letter-spacing: 1px;
 }
 
-.container .box:hover .content
-{
+.container .box:hover .content {
   left: -25px;
   padding: 60px 40px;
 }
 
-.container .box .content h2
-{
+.container .box .content h2 {
   font-size: 2em;
   color: #fff;
   margin-bottom: 10px;
   font-family: var(--primary-font);
 }
 
-.container .box .content p
-{
+.container .box .content p {
   font-size: 1.1em;
   margin-bottom: 10px;
   line-height: 1.4em;
 }
 
-.container .box .content a
-{
+.container .box .content a {
   display: inline-block;
   font-size: 1.1em;
   font-family: var(--secondary-font);
@@ -459,8 +444,7 @@ a {
   margin-top: 5px;
 }
 
-.container .box .content a:hover
-{
+.container .box .content a:hover {
   background: var(--secondary-color);
   -webkit-text-stroke: 1px red;
   color: transparent;
@@ -488,11 +472,83 @@ a {
   width: 7vw;
 }
 
+/* CRYPTO CURRENCY */
 
+.dashboard-container {
+  /*background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+.dashboard-containerDai {
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%)
+}
+.dashboard-containerBTC {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%)
+}
+.titleCriptos {
+  
+  font-family: var(--primary-font);
+  padding: 1rem;
+  text-align: center;
+  color: whitesmoke;
+}
+#last-price {
+  color: black;
+  font-family: var(--primary-font);
+  text-align: center;
+}
+.containerChart {
+  background-color: transparent;
+  padding: 1rem;
+}
+.infoCriptos {
+  color: rgb(0, 0, 0);
+}
+.infoCriptos h2 {
+  font-family: var(--primary-font);
+  color: white;
+  letter-spacing: 1px;
+}
+.infoCriptos h3 {
+  font-family: var(--primary-font);
+  color: white;
+  letter-spacing: 1px;
+}
+li {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.infoCriptos p {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span {
+  color: white;
+  font-style: italic;
+}
+.containerText {
+  padding: 2rem;
+}
+.criptoETH2 {
+  width: 7vw;
+  display: flex;
+  align-content: center;
+}
+.containerCriptoETH {
+  display: flex;
+  justify-content: center;
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(-180deg);
+  }
+}
 
 /* BITCOIN */
-
-
 
 .titleBitcoin {
   font-family: var(--primary-font);
@@ -508,7 +564,7 @@ p {
 
 footer {
   background-color: var(--secondary-color);
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .containerFooter {

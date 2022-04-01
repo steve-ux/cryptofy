@@ -1,24 +1,24 @@
 import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
-import Api from "../Api";
-import Ethereum from "../assets/logo-ethereum.png";
+import Api from "../Dai";
+import Dai from "../assets/logo-dai.png";
 
-export default function EthereumMain() {
+export default function DaiMain() {
  
   return (
     <>
-    <div className="dashboard-container">
+    <div className="dashboard-containerDai">
     <Navbar/>
-      <h1 className="titleCriptos">ETHEREUM</h1>
+      <h1 className="titleCriptos">DAI</h1>
       <div className="containerCriptoETH">
-      <img className="criptoETH2" src={Ethereum} alt="logo-ethereum" />
+      <img className="criptoETH2" src={Dai} alt="logo-ethereum" />
       </div>
       <div className="containerChart">
     <Api/>
       </div>
       <div className="containerText">
     <seccion className="infoCriptos">
-      <h2>La historia de Ethereum</h2>
+      <h2>La historia de DAI</h2>
       <p>Ethereum es una plataforma digital que adopta la tecnología de cadena de bloques (blockchain) y expande su uso a una gran variedad de aplicaciones. Ether, su criptomoneda nativa, es la segunda más grande del mercado.</p>
       <p>La plataforma Ethereum fue creada en 2015 por el programador Vitalik Buterin, de origen ruso-canadiense, con la perspectiva de crear un instrumento para aplicaciones descentralizadas y colaborativas. Ether (ETH), su criptomoneda nativa, es un token que puede ser utilizado en transacciones que usen este software. Como bitcoin, ether existe como parte de un sistema financiero autónomo de pares, libre de intervención gubernamental. También como bitcoin, el valor de ether se disparó en un corto periodo de tiempo.</p>
       <h3>¿Cómo funciona ether?</h3>

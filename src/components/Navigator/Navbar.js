@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <Nav className="navigator">
       <div className="logo">
-        <p>Criptofy</p>
+        <p></p>
       </div>
       <Burger />
     </Nav>
