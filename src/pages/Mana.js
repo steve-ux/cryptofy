@@ -2,6 +2,7 @@ import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
 import Api from "../cryptocurrencies/Mana";
 import Mana from "../assets/logo-mana.png";
+import { Link } from "react-router-dom";
 
 export default function Decentraland() {
  
@@ -15,6 +16,10 @@ export default function Decentraland() {
       </div>
       <div className="containerChart">
     <Api/>
+    <p className="epigrafe">Fuente: Coingecko</p>
+    <p className="epigrafe">*El precio se actualiza cada 60 segundos.</p>
+    <p className="epigrafe">*El gráfico muestra un período de 24 horas.</p>
+    <p className="epigrafe">*Las barras de la base muestran el market cap de las últimas 24 horas.</p>
       </div>
       <div className="containerText">
     <seccion className="infoCriptos">
@@ -41,6 +46,7 @@ export default function Decentraland() {
       <li>Eliminan el tiempo y el esfuerzo requerido en procesos manuales</li></span>
       <p>Por supuesto, los contratos inteligentes son todavía un sistema muy nuevo con muchos detalles por pulir. El código se traduce literalmente, por lo que cualquier error durante la creación del contrato podría provocar resultados no deseados que no pueden modificarse.</p>
     </seccion>
+    <Link to="/Criptos" className="back">Volver a Criptos</Link>
     </div>
     <Footer/>
     </div>

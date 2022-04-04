@@ -2,6 +2,7 @@ import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
 import Api from "../cryptocurrencies/Dogecoin";
 import Dogecoin from "../assets/logo-dogecoin.png";
+import { Link } from "react-router-dom";
 
 export default function DogecoinMain() {
  
@@ -15,32 +16,32 @@ export default function DogecoinMain() {
       </div>
       <div className="containerChart">
     <Api/>
+    <p className="epigrafe">Fuente: Coingecko</p>
+    <p className="epigrafe">*El precio se actualiza cada 60 segundos.</p>
+    <p className="epigrafe">*El gráfico muestra un período de 24 horas.</p>
+    <p className="epigrafe">*Las barras de la base muestran el market cap de las últimas 24 horas.</p>
       </div>
       <div className="containerText">
     <seccion className="infoCriptos">
       <h2>La historia de Dogecoin</h2>
-      <p>Ethereum es una plataforma digital que adopta la tecnología de cadena de bloques (blockchain) y expande su uso a una gran variedad de aplicaciones. Ether, su criptomoneda nativa, es la segunda más grande del mercado.</p>
-      <p>La plataforma Ethereum fue creada en 2015 por el programador Vitalik Buterin, de origen ruso-canadiense, con la perspectiva de crear un instrumento para aplicaciones descentralizadas y colaborativas. Ether (ETH), su criptomoneda nativa, es un token que puede ser utilizado en transacciones que usen este software. Como bitcoin, ether existe como parte de un sistema financiero autónomo de pares, libre de intervención gubernamental. También como bitcoin, el valor de ether se disparó en un corto periodo de tiempo.</p>
-      <h3>¿Cómo funciona ether?</h3>
-      <p>Ether, como otras criptomonedas, utiliza un libro digital compartido donde se registran todas las transacciones. Es de acceso público, completamente transparente y muy difícil de modificar a posteriori.</p>
-      <p>Este ‘libro contable digital’ se denomina blockchain o cadena de bloques, y se construye a través del proceso de minería de datos.</p>
-      <p>Los mineros son los responsables de verificar grupos de transacciones de ether para formar "bloques" y codificarlos resolviendo complejos algoritmos. Estos algoritmos pueden ser a su vez más o menos difíciles, como forma de mantener cierta constancia en el tiempo de procesamiento de los bloques (alrededor de uno cada 14 segundos).</p>
-      <p>Esta modalidad actual de Ethereum, en la que trabaja con mineros, se denomina <span>PoW (Proof of Work) o prueba de trabajo</span>. Pronto migrará a otra modalidad llamada <span>PoS (Proof of Stake) o Prueba de Participación.</span></p>
-      <p>Los nuevos bloques se enlazan entonces a la cadena de bloques anterior y el minero en cuestión recibe una recompensa, es decir, un número fijo de tokens de ether. Normalmente son 5 unidades de ether, aunque esta cifra puede verse reducida si la criptomoneda continúa subiendo.</p>
-      <h3>¿Cómo operar con ether?</h3>
-      <p>Para empezar a operar esta cripto debemos tener una billetera virtual o wallet para usarla en un exchange o casa de cambio. En las casas de cambio, cambiamos (valga la redundancia) nuestra moneda local por X cantidad de Ethereum o cualquier otra cripto. Los exchanges ya te proporcionan una wallet al crearte una cuenta. Algunos exchanges de ejemplo para empezar a operar fácilmente son: <span>Bitso, Buenbit, Ripio, Lemon Cash, Binance</span> por nombrar algunos que operan en Argentina con moneda local o en el resto de Latinoamérica.</p>
-      <p>Lo normal es buscar estos exchanges en la Play Store si tienes Android o la App Store si tienes iOS, bajar su aplicación y seguir los pasos para dar de alta tu cuenta. Luego es muy sencillo pasar dinero desde nuestro banco o Mercado Pago y comprar nuestras primeras criptos.</p>
-      <h3>Usos de Ethereum</h3>
-      <p>El blockchain de Ethereum es muy similar al de bitcoin, pero su lenguaje de programación le permite a los desarrolladores crear software a través del cual gestionar las transacciones y automatizar ciertos resultados. Este software se conoce como <span>contrato inteligente o smart contracts.</span></p>
-      <p>Si un contrato tradicional describe los términos de una relación, un contrato inteligente se asegura de que esos términos se cumplan escribiéndolos en código. Son programas que automáticamente ejecutan el contrato una vez que las condiciones predefinidas se cumplen, eliminando el retraso y el coste que existe al ejecutar un acuerdo de manera manual.</p>
-      <p>Por poner un ejemplo sencillo, un usuario de Ethereum podría crear un contrato inteligente para enviar una cantidad establecida de ether a un amigo en una fecha determinada. Escribirían este código en la cadena de bloques y cuando el contrato se complete (es decir, cuando llegue la fecha acordada) los ether se enviarán automáticamente.</p>
-      <p>Esta idea básica puede aplicarse a configuraciones más complejas, siendo su potencial probablemente ilimitado, con proyectos que ya han logrado un notable progreso en sectores como seguros, inmobiliarias, servicios financieros, servicios legales y microfinanciación.</p>
-      <p>Los contratos inteligentes también poseen varios beneficios adicionales:</p>
-      <span><li>Eliminan la figura del intermediario, ofreciendo al usuario control total y minimizando los costes extra</li>
-      <li>Se registran, encriptan y duplican en la cadena de bloques pública, donde todos los usuarios pueden ver la actividad del mercado</li>
-      <li>Eliminan el tiempo y el esfuerzo requerido en procesos manuales</li></span>
-      <p>Por supuesto, los contratos inteligentes son todavía un sistema muy nuevo con muchos detalles por pulir. El código se traduce literalmente, por lo que cualquier error durante la creación del contrato podría provocar resultados no deseados que no pueden modificarse.</p>
+      <p>Dogecoin, la cripto del perrito o la cripto meme, se encuentra actualmente entre las criptomonedas más populares del mercado ocupando el <span>12° lugar en capitalización del mercado</span> con un valor de 1,93 billones de dólares (abril 2022).</p>
+      <p>La moneda fue creada en 2013 por dos expertos que había trabajado previamente en IBM y Adobe, <span>Billy Markus y Jackson Palmer</span> respectivamente. La misma fue lanzada como si fuera una broma ante el incremento constante de Bitcoin en ese entonces: “una alternativa divertida y amigable”.</p>
+      <p>Hasta el momento Dogecoin ha sido utilizada para pagar pequeñas cantidades a creadores de contenido en distintas plataformas y redes sociales.</p>
+      <p>Esta criptomoneda no es nueva. Y no nació con vocación de ser moneda. El origen de la historia se remonta a hace más de diez años. La imagen que forma parte de la criptomoneda, era parte de una serie de fotos originalmente publicadas en su blog personal por un profesor de guardería japonés que había rescatado a un perro llamado <span>Kabosu</span> en Febrero de 2010. Una de dichas fotos resultó contener una mirada del perro a cámara en la que parecía ojear de forma sospechosa pero tranquila. </p>
+      <p>La foto se convirtió en objeto de bromas y memes. Tomando prestada la expresión <span>“doge”</span> para referirse cariñosamente a los perros cuyas imágenes circulaban en Internet (en una broma aún más antigua que este meme, tal y como documenta "Know Your Meme"). A partir de distintas colisiones, coincidencias y, sobre todo, foros digitales generando bromas colectivas, nace el meme que ilustraba con expresión de la tipografía Comic Sans el supuesto monólogo interior que estaba viviendo Kabosu.</p>
+      <p>A finales de 2013, los ingenieros de software Billy Markus y Jackson Palmer decidieron crear <span>“Dogecoin”,</span> una criptomoneda que nacía como una broma para ironizar sobre la especulación salvaje que ya empezaba a darse en aquel momento. Tras un impulso inicial en el que aglutinó muy deprisa a una comunidad y obtuvo cierto valor, el hype se redujo y su valor cayó, manteniéndose muy bajo durante años. No fue hasta Julio de 2020 cuando un trend de Tiktok rescató a la moneda de su irrelevancia haciendo que aumentara su valor en más de un 600% en solo día.</p>
+      <h3>El efecto Elon Musk</h3>
+      <p>En enero 2021, un grupo de usuarios de Reddit comenzó a animar a invertir en Dogecoin. Consiguieron que el valor aumentara en un 800%. Pero no fue hasta que Elon Musk, en una práctica habitual que consiste en publicar memes en su cuenta sin acreditarlos, publicó la imagen de un perro como si fuera protagonista de una revista llamada Dogue. Los usuarios lo interpretaron como una señal a favor de Dogecoin. </p>
+      <p>El multimillonario dueño de Tesla aparecía, en ese entonces, en el programa de televisión de <span>Saturday Night Live</span> en el que hacía un sketch donde explicaba sobre la naturaleza y el futuro de Dogecoin en un contexto que parece el más propicio para esta criptomoneda: a medio camino entre la broma y la amenaza al statu-quo.</p>
+      <p>Luego Musk anunciaba en Twitter que <span>SpaceX</span> lanzaría un satélite llamado Doge-1 y que sería <span>“la primera misión financiada con dogecoin, la primera criptomoneda en el espacio y el primer meme en órbita”.</span> Un usuario hizo una canción sobre la criptomoneda consiguiendo que el efecto de bola de nieve continúe con esta meme-moneda. </p>
+      <p>La retórica de una comunidad robinhoodesca que se salta las reglas del mercado para infiltrar una broma que termina cambiando dichas reglas es muy atractiva. El propio Musk declaraba a TMZ que <span>“las criptomonedas son prometedoras...pero no recomiendo invertir todos los ahorros de una vida”.</span></p>
+      <p>Quizás porque para él, invertir en Dogecoin no sea más que un juego como publicar tuits graciosos. Pero para la mayoría de los mortales es la misma especulación de toda la vida, solo que ahora la economía fluye entre memes y virales.</p>
+      <h3>Usos de Dogecoin</h3>
+      <p>Dogecoin se utiliza como moneda virtual basada en Blockchain (misma red Bitcoin). Se utiliza para realizar pagos y transacciones. Los usuarios de DOGE pueden enviar y recibir la criptomoneda con sus billeteras dogecoin. Las transacciones se realizan en segundos y con tarifas mínimas.</p>
+      <p>La criptodivisa también se puede utilizar para dar propina a los creadores de contenido. Es una moneda perfecta para <span>micro transacciones,</span> ya que permite el envío de pequeñas cantidades con tarifas casi nulas.</p>
+      <p>Para obtener dogecoin se recomienda la plataforma más grandes de criptomonedas, Binance.</p>
     </seccion>
+    <Link to="/Criptos" className="back">Volver a Criptos</Link>
     </div>
     <Footer/>
     </div>

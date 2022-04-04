@@ -572,7 +572,39 @@ span {
     transform: rotateY(-180deg);
   }
 }
-
+.epigrafe {
+  text-align: start;
+  font-style: italic;
+  font-size: .6rem;
+  margin-left: 2rem;
+  margin-bottom: -0.6rem;
+  text-indent: 0;
+  color: rgba(36, 36, 36, 0.701);
+}
+.epigrafe a {
+  text-decoration: none !important;
+}
+.back {
+  display: inline-block;
+  font-size: 1em;
+  font-family: var(--secondary-font);
+  color: white;
+  letter-spacing: 2px;
+  background: rgb(0, 0, 0);
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.back:hover {
+  background: black;
+  -webkit-text-stroke: 1px red;
+  color: transparent;
+  letter-spacing: 2px;
+  border: .2px solid rgba(255, 0, 88, 0.4);
+  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
 /* BITCOIN */
 
 .titleBitcoin {
