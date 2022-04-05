@@ -97,6 +97,12 @@ const RightNav = ({ open }) => {
             <li><Link to="/Classic">ETC</Link></li>
             <li><Link to="/Mana">MANA</Link></li>
             <li><Link to="/Dai">DAI</Link></li>
+            <li><Link to="/Ripple">XRP</Link></li>
+            <li><Link to="/Litecoin">LTC</Link></li>
+            <li><Link to="/Cardano">ADA</Link></li>
+            <li><Link to="/Polkadot">DOT</Link></li>
+            <li><Link to="/Binance">BNB</Link></li>
+            <li><Link to="/UBI">UBI</Link></li>
 					</ul>
 				</li>				
 			</ul>

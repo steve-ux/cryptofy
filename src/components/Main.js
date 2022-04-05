@@ -4,6 +4,12 @@ import Dogecoin from "../assets/logo-dogecoin.png";
 import Classic from "../assets/logo-ethereum-classic.png";
 import Mana from "../assets/logo-mana.png";
 import DAI from "../assets/logo-dai.png";
+import Binance from "../assets/logo-binance.png";
+import Cardano from "../assets/logo-ada.png";
+import Litecoin from "../assets/logo-ltc.png";
+import Polkadot from "../assets/logo-dot.png";
+import Ripple from "../assets/logo-xrp.png";
+import UBI from "../assets/logo-ubi.png";
 import { Link } from "react-router-dom";
 import Navbar from "./Navigator/Navbar";
 import Footer from "./Footer";
@@ -37,7 +43,7 @@ function Main() {
     <div className="content">
     <img className="criptoDoge" src={Dogecoin} alt="logo-dogecoin" />
       <h2>DOGECOIN</h2>
-      <p>Empezó como meme, hoy su market cap la ubica en el top 10.</p>
+      <p>Empezó como meme, hoy su market cap la ubica entre las primeras.</p>
       <Link to="/Dogecoin">Ver precios</Link>
     </div>
   </div>
@@ -66,6 +72,60 @@ function Main() {
       <h2>DAI</h2>
       <p>Atada al precio del dólar, es la inversión perfecta para quien no busca riesgos.</p>
       <Link to="/DAI">Ver precios</Link>
+    </div>
+  </div>
+  <div className="box">
+    <span></span>
+    <div className="content">
+    <img className="criptoXRP2" src={Ripple} alt="logo-ripple" />
+      <h2>RIPPLE</h2>
+      <p>Plataforma y moneda diseñada para permitir transacciones rápidas y baratas.</p>
+      <Link to="/Ripple">Ver precios</Link>
+    </div>
+  </div>
+  <div className="box">
+    <span></span>
+    <div className="content">
+    <img className="criptoLTC2" src={Litecoin} alt="logo-litecoin" />
+      <h2>LITECOIN</h2>
+      <p> La tercera criptomoneda del criptomundo y una variación de Bitcoin.</p>
+      <Link to="/Litecoin">Ver precios</Link>
+    </div>
+  </div>
+  <div className="box">
+    <span></span>
+    <div className="content">
+    <img className="criptoADA2" src={Cardano} alt="logo-cardano" />
+      <h2>CARDANO</h2>
+      <p>Fundada en 2015 por el cofundador de Ethereum, Charles Hoskinson.</p>
+      <Link to="/Cardano">Ver precios</Link>
+    </div>
+  </div>
+  <div className="box">
+    <span></span>
+    <div className="content">
+    <img className="criptoDOT2" src={Polkadot} alt="logo-polkadot" />
+      <h2>POLKADOT</h2>
+      <p>Facilita las transacciones autenticadas de una blockchain a otra.</p>
+      <Link to="/Polkadot">Ver precios</Link>
+    </div>
+  </div>
+  <div className="box">
+    <span></span>
+    <div className="content">
+    <img className="criptoBNB2" src={Binance} alt="logo-binance" />
+      <h2>BINANCE</h2>
+      <p>La criptomoneda del exchange más popular a nivel mundial.</p>
+      <Link to="/Binance">Ver precios</Link>
+    </div>
+  </div>
+  <div className="box">
+    <span></span>
+    <div className="content">
+    <img className="criptoUBI2" src={UBI} alt="logo-universal-basic-income" />
+      <h2>UBI</h2>
+      <p>El primer token creado para una renta básica universal.</p>
+      <Link to="/UBI">Ver precios</Link>
     </div>
   </div>
 </div>

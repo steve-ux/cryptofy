@@ -2,6 +2,7 @@ import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
 import Api from "../cryptocurrencies/Dogecoin";
 import Dogecoin from "../assets/logo-dogecoin.png";
+import Arrow from "../assets/arrow-up.png";
 import { Link } from "react-router-dom";
 
 export default function DogecoinMain() {
@@ -10,7 +11,7 @@ export default function DogecoinMain() {
     <>
     <div className="dashboard-containerDoge">
     <Navbar/>
-      <h1 className="titleCriptos">DOGECOIN</h1>
+      <h1 className="titleCriptos" id="DOGE">DOGECOIN</h1>
       <div className="containerCriptoETH">
       <img className="criptoETH2" src={Dogecoin} alt="logo-ethereum" />
       </div>
@@ -41,7 +42,10 @@ export default function DogecoinMain() {
       <p>La criptodivisa también se puede utilizar para dar propina a los creadores de contenido. Es una moneda perfecta para <span>micro transacciones,</span> ya que permite el envío de pequeñas cantidades con tarifas casi nulas.</p>
       <p>Para obtener dogecoin se recomienda la plataforma más grandes de criptomonedas, Binance.</p>
     </seccion>
+    <div className="prefooter">
     <Link to="/Criptos" className="back">Volver a Criptos</Link>
+    <a href="#DOGE"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem"}}/></a>
+    </div>
     </div>
     <Footer/>
     </div>

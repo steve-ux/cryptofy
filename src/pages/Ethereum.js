@@ -2,6 +2,7 @@ import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
 import Api from "../cryptocurrencies/Ethereum";
 import Ethereum from "../assets/logo-ethereum.png";
+import Arrow from "../assets/arrow-up.png";
 import NFT from "../assets/Art-NFT.jpeg";
 import { Link } from "react-router-dom";
 
@@ -11,7 +12,7 @@ export default function EthereumMain() {
     <>
     <div className="dashboard-container">
     <Navbar/>
-      <h1 className="titleCriptos">ETHEREUM</h1>
+      <h1 className="titleCriptos" id="ETH">ETHEREUM</h1>
       <div className="containerCriptoETH">
       <img className="criptoETH2" src={Ethereum} alt="logo-ethereum" />
       </div>
@@ -26,7 +27,7 @@ export default function EthereumMain() {
     <seccion className="infoCriptos">
       <h2>La historia de <a href="https://ethereum.org/es/what-is-ethereum/" target="_blank" rel="noreferrer">Ethereum</a></h2>
       <p>Ethereum es una plataforma digital que adopta la tecnología de cadena de bloques (blockchain) y expande su uso a una gran variedad de aplicaciones. Ether, su criptomoneda nativa, es la segunda más grande del mercado.</p>
-      <p>La plataforma Ethereum fue creada en 2015 por el programador Vitalik Buterin, de origen ruso-canadiense, con la perspectiva de crear un instrumento para aplicaciones descentralizadas y colaborativas. Ether (ETH), su criptomoneda nativa, es un token que puede ser utilizado en transacciones que usen este software. Como bitcoin, ether existe como parte de un sistema financiero autónomo de pares, libre de intervención gubernamental. También como bitcoin, el valor de ether se disparó en un corto periodo de tiempo.</p>
+      <p>La plataforma Ethereum fue creada en 2015 por el programador <span>Vitalik Buterin,</span> de origen ruso-canadiense, con la perspectiva de crear un instrumento para aplicaciones descentralizadas y colaborativas. Ether (ETH), su criptomoneda nativa, es un token que puede ser utilizado en transacciones que usen este software. Como bitcoin, ether existe como parte de un sistema financiero autónomo de pares, libre de intervención gubernamental. También como bitcoin, el valor de ether se disparó en un corto periodo de tiempo y fluctúa constantemente.</p>
       <h3>¿Cómo funciona ether?</h3>
       <p>Ether, como otras criptomonedas, utiliza un libro digital compartido donde se registran todas las transacciones. Es de acceso público, completamente transparente y muy difícil de modificar a posteriori.</p>
       <p>Este ‘libro contable digital’ se denomina blockchain o cadena de bloques, y se construye a través del proceso de minería de datos.</p>
@@ -56,11 +57,18 @@ export default function EthereumMain() {
       <p>Los NFT funcionan a través de la tecnología <span>blockchain o de cadena de bloques de Ethereum</span> (normalmente). Es la misma tecnología de las criptomonedas, que funcionan mediante una red de ordenadores descentralizada, con bloques o nodos enlazados y asegurados usando criptografía. Cada bloque enlaza a un bloque previo, así como una fecha y datos de transacciones, y por diseño son resistentes a la modificación de datos.</p>
       <p>A los NFT, se les asigna una especie de certificado digital de autenticidad, una serie de metadatos que no se van a poder modificar. En estos metadatos se garantiza su autenticidad, se registra el valor de partida y todas las adquisiciones o transacciones que se hayan hecho, y también a su autor.</p>
       <p>Esto quiere decir que si compras un contenido digital tokenizado con NFT, en todo momento siempre habrá constancia del primer valor que tenía, y de por cuánto lo has comprado. Es como cuando compras un cuadro y se lleva un registro de por dónde se mueve.</p>
+      <div className="videos">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0KrdRZVr-q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p className="epigrafe">Créditos: Fazt</p>
+      </div>
       <h3>¿Comprarías un NFT?</h3>
       <p>Si los NFT no se pueden comprar y vender tan fácil como los Bitcoin, entonces, ¿por qué la gente los compra y se gasta tanto dinero en ellos? Pues es sencillo, <span>porque creen que su valor va aumentar con el tiempo,</span> y luego podrán venderlo por más dinero. Nadie se gasta 260.000 euros por el dibujo de una roca o el gif de un gatito porque le gusten los dibujos de rocas o gatitos, ya que los puede tener gratis, sino por el valor que tiene este dibujo concreto al ser un NFT.</p>
       <p>La idea, por lo tanto, es que si me compro un NFT por 100.000 euros, en un futuro pueda revenderlo por más dinero. Es un activo único, lo que en teoría le debería dar un valor mayor al no existir otro igual.</p>
     </seccion>
+    <div className="prefooter">
     <Link to="/Criptos" className="back">Volver a Criptos</Link>
+    <a href="#ETH"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem"}}/></a>
+    </div>
     </div>
     <Footer/>
     </div>
