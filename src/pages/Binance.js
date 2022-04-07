@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import Api from "../cryptocurrencies/Binance";
 import Binance from "../assets/logo-binance.png";
 import Arrow from "../assets/arrow-up.png";
-import NFT from "../assets/Art-NFT.jpeg";
 import { Link } from "react-router-dom";
 
 export default function BinanceMain() {
@@ -26,44 +25,30 @@ export default function BinanceMain() {
       <div className="containerText">
     <seccion className="infoCriptos">
       <h2>La historia de <a href="https://www.binance.com/es/bnb" target="_blank" rel="noreferrer">Binance</a></h2>
-      <p>Ethereum es una plataforma digital que adopta la tecnología de cadena de bloques (blockchain) y expande su uso a una gran variedad de aplicaciones. Ether, su criptomoneda nativa, es la segunda más grande del mercado.</p>
-      <p>La plataforma Ethereum fue creada en 2015 por el programador <span>Vitalik Buterin,</span> de origen ruso-canadiense, con la perspectiva de crear un instrumento para aplicaciones descentralizadas y colaborativas. Ether (ETH), su criptomoneda nativa, es un token que puede ser utilizado en transacciones que usen este software. Como bitcoin, ether existe como parte de un sistema financiero autónomo de pares, libre de intervención gubernamental. También como bitcoin, el valor de ether se disparó en un corto periodo de tiempo y fluctúa constantemente.</p>
-      <h3>¿Cómo funciona BNB?</h3>
-      <p>Ether, como otras criptomonedas, utiliza un libro digital compartido donde se registran todas las transacciones. Es de acceso público, completamente transparente y muy difícil de modificar a posteriori.</p>
-      <p>Este ‘libro contable digital’ se denomina blockchain o cadena de bloques, y se construye a través del proceso de minería de datos.</p>
-      <p>Los mineros son los responsables de verificar grupos de transacciones de ether para formar "bloques" y codificarlos resolviendo complejos algoritmos. Estos algoritmos pueden ser a su vez más o menos difíciles, como forma de mantener cierta constancia en el tiempo de procesamiento de los bloques (alrededor de uno cada 14 segundos).</p>
-      <p>Esta modalidad actual de Ethereum, en la que trabaja con mineros, se denomina <span>PoW (Proof of Work) o prueba de trabajo</span>. Pronto migrará a otra modalidad llamada <span>PoS (Proof of Stake) o Prueba de Participación.</span></p>
-      <p>Los nuevos bloques se enlazan entonces a la cadena de bloques anterior y el minero en cuestión recibe una recompensa, es decir, un número fijo de tokens de ether. Normalmente son 5 unidades de ether, aunque esta cifra puede verse reducida si la criptomoneda continúa subiendo.</p>
-      <h3>¿Cómo operar con ether?</h3>
-      <p>Para empezar a operar esta cripto debemos tener una billetera virtual o wallet para usarla en un exchange o casa de cambio. En las casas de cambio, cambiamos (valga la redundancia) nuestra moneda local por X cantidad de Ethereum o cualquier otra cripto. Los exchanges ya te proporcionan una wallet al crearte una cuenta. Algunos exchanges de ejemplo para empezar a operar fácilmente son: <span>Bitso, Buenbit, Ripio, Lemon Cash, Binance</span> por nombrar algunos que operan en Argentina con moneda local o en el resto de Latinoamérica.</p>
-      <p>Lo normal es buscar estos exchanges en la Play Store si tienes Android o la App Store si tienes iOS, bajar su aplicación y seguir los pasos para dar de alta tu cuenta. Luego es muy sencillo pasar dinero desde nuestro banco o Mercado Pago y comprar nuestras primeras criptos.</p>
-      <h3>Usos de Ethereum</h3>
-      <p>El blockchain de Ethereum es muy similar al de bitcoin, pero su lenguaje de programación le permite a los desarrolladores crear software a través del cual gestionar las transacciones y automatizar ciertos resultados. Este software se conoce como <span>contrato inteligente o smart contracts.</span></p>
-      <p>Si un contrato tradicional describe los términos de una relación, un contrato inteligente se asegura de que esos términos se cumplan escribiéndolos en código. Son programas que automáticamente ejecutan el contrato una vez que las condiciones predefinidas se cumplen, eliminando el retraso y el coste que existe al ejecutar un acuerdo de manera manual.</p>
-      <p>Por poner un ejemplo sencillo, un usuario de Ethereum podría crear un contrato inteligente para enviar una cantidad establecida de ether a un amigo en una fecha determinada. Escribirían este código en la cadena de bloques y cuando el contrato se complete (es decir, cuando llegue la fecha acordada) los ether se enviarán automáticamente.</p>
-      <p>Esta idea básica puede aplicarse a configuraciones más complejas, siendo su potencial probablemente ilimitado, con proyectos que ya han logrado un notable progreso en sectores como seguros, inmobiliarias, servicios financieros, servicios legales y microfinanciación.</p>
-      <p>Los contratos inteligentes también poseen varios beneficios adicionales:</p>
-      <span><li>Eliminan la figura del intermediario, ofreciendo al usuario control total y minimizando los costes extra</li>
-      <li>Se registran, encriptan y duplican en la cadena de bloques pública, donde todos los usuarios pueden ver la actividad del mercado</li>
-      <li>Eliminan el tiempo y el esfuerzo requerido en procesos manuales</li></span>
-      <p>Por supuesto, los contratos inteligentes son todavía un sistema muy nuevo con muchos detalles por pulir. El código se traduce literalmente, por lo que cualquier error durante la creación del contrato podría provocar resultados no deseados que no pueden modificarse.</p>
-      <h3>Los NFT</h3>
-      <p>Para entender el concepto de los <span>NFT (Non Fungible Token o Tokens No Fungibles)</span>, primero tenemos que saber y entender que en nuestro sistema jurídico, existen bienes fungibles y bienes no fungibles. Los bienes fungibles son los que pueden intercambiarse, teniendo un valor en función de su número, medida o peso. Y los bienes no fungibles son los que no son sustituibles.</p>
-      <p>Un ejemplo de bienes fungibles es el dinero. Si tienes un billete de 20 euros, este es un bien fungible, ya que lo puedes intercambiar sin problemas por otro billete de 20 euros, no pierde valor y es exactamente igual. Además, este billete se consume cuando lo utilizas.</p>
-      <p>Y por otra parte, un ejemplo de bien no fungible sería una obra de arte. Si tienes un cuadro en casa, este no se consume al utilizarse y tampoco puede ser sustituido por otro cuadro. Una obra de arte no es equivalente a otra, y por lo tanto, no se pueden simplemente intercambiar como pasa con un billete de 20 euros.</p>
-      <p>Por lo tanto, puedes pensar en un NFT como una gran obra de arte, como la Gioconda de Da Vinci. Solo hay una y está en una galería de arte concreta. Si la quieres, solo puedes comprar la original en el caso de que estuviera a la venta. También podrías hacerte con una copia, pero tendría otro valor, ya que no sería la original. Pues eso exactamente es lo que hace el NFT, pero de <span>forma digital.</span></p>
-      <p>los NFT suelen estar adjuntos a algunas obras o ilustraciones digitales. Su precio, es realmente el que la gente le quiera dar, y ahora que están en un pico de popularidad, podemos encontrarnos con que hay gente que paga 260.000 euros por el dibujo de una roca adjunto a un NFT.</p>
-      <img src={NFT} alt="arte digital" width="280vw" style={{"float": "left", "padding": ".5rem"}}/>
-      <p>Los NFT funcionan a través de la tecnología <span>blockchain o de cadena de bloques de Ethereum</span> (normalmente). Es la misma tecnología de las criptomonedas, que funcionan mediante una red de ordenadores descentralizada, con bloques o nodos enlazados y asegurados usando criptografía. Cada bloque enlaza a un bloque previo, así como una fecha y datos de transacciones, y por diseño son resistentes a la modificación de datos.</p>
-      <p>A los NFT, se les asigna una especie de certificado digital de autenticidad, una serie de metadatos que no se van a poder modificar. En estos metadatos se garantiza su autenticidad, se registra el valor de partida y todas las adquisiciones o transacciones que se hayan hecho, y también a su autor.</p>
-      <p>Esto quiere decir que si compras un contenido digital tokenizado con NFT, en todo momento siempre habrá constancia del primer valor que tenía, y de por cuánto lo has comprado. Es como cuando compras un cuadro y se lleva un registro de por dónde se mueve.</p>
-      <div className="videos">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/0KrdRZVr-q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p className="epigrafe">Créditos: Fazt</p>
-      </div>
-      <h3>¿Comprarías un NFT?</h3>
-      <p>Si los NFT no se pueden comprar y vender tan fácil como los Bitcoin, entonces, ¿por qué la gente los compra y se gasta tanto dinero en ellos? Pues es sencillo, <span>porque creen que su valor va aumentar con el tiempo,</span> y luego podrán venderlo por más dinero. Nadie se gasta 260.000 euros por el dibujo de una roca o el gif de un gatito porque le gusten los dibujos de rocas o gatitos, ya que los puede tener gratis, sino por el valor que tiene este dibujo concreto al ser un NFT.</p>
-      <p>La idea, por lo tanto, es que si me compro un NFT por 100.000 euros, en un futuro pueda revenderlo por más dinero. Es un activo único, lo que en teoría le debería dar un valor mayor al no existir otro igual.</p>
+      <p>La historia de Binance Coin (BNB) se remonta a 2017, momento en que la empresa optó por una ICO para recaudar fondos con los que financiar su desarrollo. Siendo precisos, esta campaña abarcó desde el 26 de junio hasta el 3 de julio con la venta de 100 millones de tokens, equivalente al 50% del suministro total. El precio era de 1 ETH por 2.700 BNB o 1 BTC por 20.000 BNB, en torno a los <span>11 centavos de dólar</span> en ese momento.</p>
+      <p>En un principio, se trataba de un token estándar ERC-20, es decir, operaba desplegado en la red blockchain de Ethereum. Sin embargo, entre los planes de la plataforma se barajaba contar con su propio blockchain, la <span>Binance Chain</span>, y así fue.</p>
+      <p>La plataforma Binance fue lanzada al público en el momento ideal, es decir, durante el boom de las criptomonedas en verano de 2017, fiebre que continuaría hasta finales de ese mismo año. En ese momento, la demanda de activos digitales por parte de los usuarios era enorme y las plataformas dedicadas a la negociación de criptomonedas no daban abasto con la llegada de nuevos clientes.</p>
+      <p>Los inversores se percataron rápidamente de que Binance era una plataforma muy cómoda, intuitiva, visualmente agradable, fácil de usar y con unas comisiones por transacción muy bajas, un 0.1%. Adicionalmente, poseer tokens BNB reducía aún más los costes por transacción, lo que impulsó a la empresa a los primeros puestos, desbancando a sus competidores.</p>
+      <h3>Usos de BNB</h3>
+      <p>El token salió al mercado el 25 de julio de 2017 a unos 11 centavos de dólar, y ya se negociaba por encima de un dólar desde el 14 de agosto, superando los 10$ el 27 de diciembre de 2017. Por lo tanto, el valor unitario de cada token BNB se multiplicó por 100 en apenas 5 meses. Dos semanas después, alcanzó un máximo de casi 25$ USD, el 12 de enero de 2018.</p>
+      <p>Durante los meses siguientes el precio del token se mantuvo estable, hasta alcanzar posteriormente un máximo de casi 40$ el 28 de junio de 2019, superando finalmente los 50$ el 2 de febrero de 2021 y los 100$ el 9 de febrero.</p>
+      <p>El token BNB otorga una gran ventaja con comisiones reducidas al operar en Binance. Esto es probablemente lo que permitió que dicha moneda ganara popularidad rápidamente y se revalorizara de tal manera. Un descuento en comisiones que se reduce anualmente a la mitad.</p>
+      <p>BNB es el motor del Ecosistema Binance y la moneda nativa de Binance Chain y Binance Smart Chain. BNB presenta diversos casos de uso:</p>
+      <span><li>Medio de pago de las comisiones de trading en el exchange de Binance</li>
+      <li>Medio de pago de las comisiones de trading en Binance DEX (Exchange Descentralizado)</li>
+      <li>Medio de pago de las comisiones por transacción en Binance Chain</li>
+      <li>Medio de pago para compras de bienes y servicios tanto en internet como en tiendas (por ejemplo, utilizando Binance Card o Binance Pay)</li>
+      <li>Reservas de hoteles, vuelos y muchas cosas más en Travala.com</li>
+      <li>Utility token comunitario del ecosistema Binance Smart Chain (como por ejemplo juegos y DApps)</li>
+      <li>Participación en ventas de tokens llevadas a cabo en Binance Launchpad</li>
+      <li>Realizar donativos en Binance Charity</li>
+      <li>Aportar liquidez en Binance Liquid Swap</li></span>
+      <p>Hasta principios de 2021, Binance DEX no fue acogido masivamente por la comunidad entusiasta de las criptomonedas, ya que algunos usuarios se mostraban reticentes a la naturaleza excesivamente centralizada de esta plataforma. Sin embargo, dado el astronómico incremento de las comisiones por transacción en la red Ethereum durante 2021, la plataforma descentralizada de Binance está comenzando a ganar popularidad y esto se ha notado en el precio del token de BNB, que se ha disparado a lo largo del pasado año 2021.</p>
+      <h3>Quema de tokens</h3>
+      <p>Binance se ha comprometido a asignar un 25% de sus beneficios para recomprar tokens BNB a precio de mercado trimestralmente y quemarlos, es decir, destruirlos para reducir el suministro total disponible. Como resultado, aumenta la escasez de dicha moneda, lo cual redunda en un repunte de su precio.</p>
+      <p>La plataforma se compromete a <span>quemar tokens</span> hasta que el suministro total alcance los 100 millones de tokens, es decir, la mitad del suministro máximo inicial. Hacia principios de 2021, la plataforma había quemado en torno al 30% de los tokens, de modo que aún quedan bastantes tokens por eliminar del suministro.</p>
+      <p>Pese al poco tiempo que ha transcurrido desde que Binance se lanzó al público, ya cuenta con un pasado bastante rico, y en la actualidad, es indiscutiblemente es una de las mejores plataformas para negociar con criptomonedas. De hecho, ha logrado tal hegemonía gracias a la utilidad brindada por su token BNB y a la excelente gestión de la empresa.</p>
+      <p>En vista del desarrollo de la industria de las criptomonedas y la creciente popularidad de Binance, podemos estar seguros de que el historial de la plataforma seguirá incluyendo nuevos hitos en el futuro, y que el equipo directivo seguirá innovando para ofrecer a sus clientes nuevas funciones relacionadas con criptomonedas.</p>
     </seccion>
     <div className="prefooter">
     <Link to="/Criptos" className="back">Volver a Criptos</Link>

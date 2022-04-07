@@ -44,7 +44,7 @@ function Cardano() {
 			type: "scatter",
 			mode: "lines+markers",
 			marker: { 
-                color: "white", 
+                color: "#1d061a", 
                 size: 2,                
              },
              

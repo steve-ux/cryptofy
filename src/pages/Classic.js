@@ -50,7 +50,7 @@ export default function ClassicMain() {
       <h3>¿Cómo funciona ETC?</h3>
       <p>Tanto Ethereum y Bitcoin se basan en el consenso de <span>prueba de trabajo</span> (los tradicionales mineros criptos), al igual que en Ethereum Classic. Mientras que Ethereum tiene previsto pasar al consenso de prueba de participación (eliminar a los mineros), ETC no tiene previsto el cambio. Destacar que los desarrolladores de ETC trabajan de manera constante en mejoras.</p>
       <p>Desde marzo de 2021 la cantidad de ETC liberados por bloque es de 3.2 ETC (recompensa que recibe el minero), ajustando a la baja para reducir la inflación. Podemos realizar minería de ETC con los mismos sistemas que ETH.</p>
-      <p>Esta criptomoneda tiene un suministro limitado a 210.7 millones de ETC. Actualmente en circulación hay algo más de 130 millones de ETC en circulación en la red. Posteriormente, cuando se llegue al bloque 15 millones generados en ETC, se dará otro <span>halving</span> (reducir la recompensa de los mineros). En este caso por cada bloque se pasará a obtener 2.56 ETC por bloque, algo que se daría en abril de 2022.</p>
+      <p>Esta criptomoneda tiene un suministro limitado a 210.7 millones de ETC. Actualmente en circulación hay algo más de 130 millones de ETC en la red. Posteriormente, cuando se llegue al bloque 15 millones generados en ETC, se dará otro <span>halving</span> (reducir la recompensa de los mineros). En este caso por cada bloque minado se pasará a obtener 2.56 ETC, algo que se daría en abril de 2022.</p>
       <p>ETC puede conseguirse fácilmente en el exchange Binance.</p>
     </seccion>
     <div className="prefooter">

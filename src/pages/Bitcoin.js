@@ -28,14 +28,22 @@ export default function BitcoinMain() {
       <p>Bitcoin nación en 2008 en medio de una crisis económica que atravesaba el mundo. Su creador o creadores, del que no se sabe existencia, apareció al mundo bajo el seudónimo de <span>Satoshi Nakamoto</span> para proteger su identidad y asegurar el anonimato del proyecto. Su intención fue ser una revolución financiera y cambiar el modo en el que conocíamos las finanzas. Logrando su cometido, hoy Bitcoin, es considerado la <span>moneda del futuro.</span></p>
       <p>BTC, como se conoce su abreviatura, usa tecnología peer-to-peer o entre pares para operar sin una autoridad central o bancos, es decir, <span>descentralizada</span>; la gestión de las transacciones y la emisión de bitcoins es llevada a cabo de forma colectiva por la red y los mineros.</p>
       <p>Bitcoin es de código abierto; su diseño es público, nadie es dueño o controla Bitcoin y todo el mundo puede participar. Por medio de sus muchas propiedades únicas, Bitcoin permite usos interesantes no contemplados por ningún sistema de pagos anterior.</p>
+      <h3>El White Paper de Bitcoin</h3>
+      <p>El White Paper, o <span>Libro Blanco</span> en español, es un documento informativo que promueve o resalta las características de un producto, una solución o un servicio que ofrece u ofrecerá una empresa u organización. Toda criptomoneda seria comienza su camino publicando su white paper, donde explica su origen, su propósito y su road map (hoja de ruta) mostrando su planificación de desarrollo y objetivos a corto y largo plazo. A continuación puedes acceder a leer el de bitcoin, extraído de su website oficial, y así profundizar más en BTC:</p>
+      <div className="containerPDF">
+      <embed src="https://bitcoin.org/files/bitcoin-paper/bitcoin_es_latam.pdf" type="application/pdf" width="100%" height="100%"></embed>
+      </div>      
       <h3>¿Cómo funciona bitcoin?</h3>
       <p>Bitcoin es una moneda virtual o un medio de intercambio electrónico que sirve para adquirir productos y servicios como cualquier otra moneda.</p>
       <p>Para poder hacer un intercambio, cada usuario debe tener una clave criptográfica y el sistema permite descontar la cantidad de bitcoin a quien compra y aumentar la cantidad de bitcoin de la cuenta de quien vende.</p>
       <p><span>No tiene intermediarios</span> al realizar un cobro o pago. Puede contar con varias cuentas y tiene un funcionamiento ininterrumpido las 24 horas.</p>
       <p>Hay que tener en cuenta que la moneda y la clave asociada al código criptográfico deben ser verificadas para su ejecución. Ahí entran los <span>mineros de bitcoin,</span> personas del todo el mundo con equipos especializados para realizar cálculos matemáticos complejos y que aportan a mantener segura la red de bitcoin o blockchain.</p>
       <p>Estos mineros, a cambio de mantener segura la red, reciben un incentivo en bitcoin. El total de bitcoins minados tiene un límite de 21 millones. A la fecha (2022) se han minado unos 18,9 millones (un 90%). Sin embargo, no se espera que la extracción del 10% final se complete hasta febrero de 2140, a tenor de las estimaciones de la red y los cronogramas de las progresivas reducciones a la mitad de las recompensas de bitcoin que habrá para los mineros.</p>
+      <p><span>Blockchain en menos de 3':</span></p>
+      <div className="video-container">
       <div className="videos">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/70asKwy15Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/70asKwy15Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <p className="epigrafe">Créditos: Exceltic</p>
       </div>
       <h3>¿Cómo operar con bitcoin?</h3>

@@ -51,14 +51,16 @@ export default function EthereumMain() {
       <p>Para entender el concepto de los <span>NFT (Non Fungible Token o Tokens No Fungibles)</span>, primero tenemos que saber y entender que en nuestro sistema jurídico, existen bienes fungibles y bienes no fungibles. Los bienes fungibles son los que pueden intercambiarse, teniendo un valor en función de su número, medida o peso. Y los bienes no fungibles son los que no son sustituibles.</p>
       <p>Un ejemplo de bienes fungibles es el dinero. Si tienes un billete de 20 euros, este es un bien fungible, ya que lo puedes intercambiar sin problemas por otro billete de 20 euros, no pierde valor y es exactamente igual. Además, este billete se consume cuando lo utilizas.</p>
       <p>Y por otra parte, un ejemplo de bien no fungible sería una obra de arte. Si tienes un cuadro en casa, este no se consume al utilizarse y tampoco puede ser sustituido por otro cuadro. Una obra de arte no es equivalente a otra, y por lo tanto, no se pueden simplemente intercambiar como pasa con un billete de 20 euros.</p>
+      <img src={NFT} alt="arte digital" width="280vw" style={{"float": "left", "padding": ".5rem", "border-radius": "2rem"}}/>
       <p>Por lo tanto, puedes pensar en un NFT como una gran obra de arte, como la Gioconda de Da Vinci. Solo hay una y está en una galería de arte concreta. Si la quieres, solo puedes comprar la original en el caso de que estuviera a la venta. También podrías hacerte con una copia, pero tendría otro valor, ya que no sería la original. Pues eso exactamente es lo que hace el NFT, pero de <span>forma digital.</span></p>
       <p>los NFT suelen estar adjuntos a algunas obras o ilustraciones digitales. Su precio, es realmente el que la gente le quiera dar, y ahora que están en un pico de popularidad, podemos encontrarnos con que hay gente que paga 260.000 euros por el dibujo de una roca adjunto a un NFT.</p>
-      <img src={NFT} alt="arte digital" width="280vw" style={{"float": "left", "padding": ".5rem"}}/>
       <p>Los NFT funcionan a través de la tecnología <span>blockchain o de cadena de bloques de Ethereum</span> (normalmente). Es la misma tecnología de las criptomonedas, que funcionan mediante una red de ordenadores descentralizada, con bloques o nodos enlazados y asegurados usando criptografía. Cada bloque enlaza a un bloque previo, así como una fecha y datos de transacciones, y por diseño son resistentes a la modificación de datos.</p>
       <p>A los NFT, se les asigna una especie de certificado digital de autenticidad, una serie de metadatos que no se van a poder modificar. En estos metadatos se garantiza su autenticidad, se registra el valor de partida y todas las adquisiciones o transacciones que se hayan hecho, y también a su autor.</p>
       <p>Esto quiere decir que si compras un contenido digital tokenizado con NFT, en todo momento siempre habrá constancia del primer valor que tenía, y de por cuánto lo has comprado. Es como cuando compras un cuadro y se lleva un registro de por dónde se mueve.</p>
+      <div className="video-container">
       <div className="videos">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/0KrdRZVr-q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0KrdRZVr-q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <p className="epigrafe">Créditos: Fazt</p>
       </div>
       <h3>¿Comprarías un NFT?</h3>

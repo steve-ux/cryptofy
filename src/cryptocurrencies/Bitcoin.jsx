@@ -44,7 +44,7 @@ function Bitcoin() {
 			type: "scatter",
 			mode: "lines+markers",
 			marker: { 
-                color: "white", 
+                color: "#1d061a", 
                 size: 2,                
              },
              
@@ -121,9 +121,9 @@ function Bitcoin() {
 			) : (
 				<>
 					<h2 id='last-price' className='text-center text-primary animate__animated'>
-					Precio actual:	<span>$ {latestPrice}</span> USD
-					</h2>
+					Precio actual:	<span className="price">$ {latestPrice}</span> USD
 					<div id='chart' className='p-0 m-0'></div>
+					</h2>
 				</>
 			)}
 		</div>
