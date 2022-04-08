@@ -110,7 +110,7 @@ export default function Decentraland() {
               experiencias de este concepto que promete revolucionar Internet.
               Decentraland ha sido pionera en esta tecnología de la que hoy
               muchas empresas quieren participar. Recientemente recibió una
-              millonario inversión de <span>JP Morgan,</span> uno de los bancos
+              millonaria inversión de <span>JP Morgan,</span> uno de los bancos
               más importantes del mundo, y se convirtió en el primer banco en
               ingresar al metaverso. Más precisamente, al "metaverso argentino"
               de Decentraland.

@@ -55,18 +55,18 @@ export default function RippleMain() {
       <p>Entonces, podemos darnos cuenta de la aceptación en el mercado financiero que ha tenido esta criptomoneda y sus múltiples aplicaciones.</p>
       <h3>¿Es buena inversión XRP?</h3>
       <p>Descargo de responsabilidad: no existe tal cosa como una inversión 100% segura, y cada decisión tiene sus riesgos. En cualquier caso, eres tu quien debe decidir. Sin embargo, a continuación, se presentan algunas <span>ventajas y desventajas</span> que pueden ayudarte.</p>
-      <p>Pros:</p>
+      <p><span>Pros:</span></p>
       <p><span>1.</span> Como se ha destacado anteriormente, Ripple es una organización oficial con la confianza de muchos bancos - no se trata de una nueva red Blockchain de una empresa desconocida.</p>
       <p><span>2.</span> Sin inflación. Todas las monedas XRP se extrajeron en un principio y ya existen.</p>
       <p><span>3.</span> Cuantos más bancos lo utilicen como plataforma de transacciones, mayor será el valor del XRP. Si un día, todos los bancos deciden empezar a utilizarlo como una moneda bancaria unificada en lugar de procesar los cambios en divisas FIAT, hará una buena fortuna para todos los que invirtieron en Ripple tempranamente.</p>
-      <p>Contras:</p>
+      <p><span>Contras:</span></p>
       <p><span>1.</span> Está muy centralizado. La idea de las criptomonedas es evitar el control centralizado. Como cada moneda de XRP ya está minada, los desarrolladores de Ripple pueden decidir cuándo y cuánto liberar, o no liberar. Por lo tanto, es básicamente como invertir en un banco.</p>
       <p><span>2.</span> Además de la centralización, hoy en día es casi como un monopolio ya que Ripple Labs posee el 61 por ciento de las monedas.</p>
       <p><span>3.</span> Es código abierto - una decisión muy inteligente, pero una vez que el código es accesible para todos hay una buena posibilidad de que mucha gente intente piratearlo. Algunos de ellos incluso podrían tener éxito.</p>
       <p>Ripple, al ser una de las primeras criptos que surgieron en el boom inicial, hoy en día puede conseguirse casi en cualquier exchange de renombre.</p>
     </seccion>
     <div className="prefooter">
-    <Link to="/Criptos" className="back">Volver a Criptos</Link>
+    <Link to="/Criptos" className="back">VOLVER A CRIPTOS</Link>
     <a href="#XRP"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem"}}/></a>
     </div>
     </div>

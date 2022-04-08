@@ -602,7 +602,7 @@ background-image: linear-gradient(360deg, #c93c3c 0%, #FF0000 100%);
   flex-direction: column;
 }
 .dashboard-containerUBI {
-  background-image: linear-gradient(to top, #b3ffab 0%, #12fff7 100%);
+  background-image: linear-gradient(to top, #72b66b 0%, #12fff7 100%);
   display: flex;
   flex-direction: column;
 }
@@ -636,7 +636,7 @@ a {
   color: white;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .infoCriptos h3 {
   font-family: var(--primary-font);
@@ -645,14 +645,17 @@ a {
   text-transform: uppercase;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 li {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .infoCriptos p {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:var(--primary-font);
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: .9rem;
+
 }
 span {
   color: white;
@@ -705,6 +708,10 @@ span {
 	top: 0;
 	width: 100%;
 	}
+  .video-container {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
 .containerPDF {
 display: flex;
 flex-direction: column;
@@ -723,6 +730,7 @@ height: 90vh;
   text-decoration: none;
   font-weight: 700;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 .back:hover {
   background: black;

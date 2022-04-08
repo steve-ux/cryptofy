@@ -40,7 +40,7 @@ export default function DogecoinMain() {
       <h3>Usos de Dogecoin</h3>
       <p>Dogecoin se utiliza como moneda virtual basada en Blockchain (misma red Bitcoin). Se utiliza para realizar pagos y transacciones. Los usuarios de DOGE pueden enviar y recibir la criptomoneda con sus billeteras dogecoin. Las transacciones se realizan en segundos y con tarifas mínimas.</p>
       <p>La criptodivisa también se puede utilizar para dar propina a los creadores de contenido. Es una moneda perfecta para <span>micro transacciones,</span> ya que permite el envío de pequeñas cantidades con tarifas casi nulas.</p>
-      <p>Para obtener dogecoin se recomienda la plataforma más grandes de criptomonedas, Binance.</p>
+      <p>Para obtener dogecoin se recomienda la plataforma más grandes de criptomonedas, Binance. También en el exchange argentino Ripio se puede conseguir.</p>
     </seccion>
     <div className="prefooter">
     <Link to="/Criptos" className="back">Volver a Criptos</Link>
