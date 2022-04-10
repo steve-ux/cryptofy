@@ -47,7 +47,7 @@ export default function DaiMain() {
     </seccion>
     <div className="prefooter">
     <Link to="/Criptos" className="back">Volver a Criptos</Link>
-    <a href="#DAI"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem"}}/></a>
+    <a href="#DAI"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem", "filter":"invert(100%)"}}/></a>
     </div>
     </div>
     <Footer/>

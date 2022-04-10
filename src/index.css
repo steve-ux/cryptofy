@@ -30,7 +30,11 @@ body {
 }
 
 a {
-  text-decoration: none;
+  color: red;
+}
+a .enlaces {
+  -webkit-text-stroke: 1px red !important;
+  color: transparent !important;
 }
 
 /* INICIO */
@@ -538,77 +542,67 @@ a {
 /* CRYPTO CURRENCY */
 
 .dashboard-container {
-  /*background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);*/
-  background-image: linear-gradient(to top, #ac4eec 0%, #9b23ea 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerDai {
-  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerBTC {
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerClassic {
-  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerMana {
-  background-image: linear-gradient(to top, #ff0844 0%, #fa997c 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerDoge {
-  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerBNB {
-  background-image: linear-gradient(-60deg, #fee140 0%, #f5bb0b 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerADA {
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerLTC {
-  background-color: #FFFFFF;
-background-image: linear-gradient(360deg, #c93c3c 0%, #FF0000 100%);
-
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerDOT {
   background-color: #c2066a;
-  background-image: linear-gradient(225deg, #970553 0%, #815da1 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerXRP {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.482) 0%, rgba(55, 55, 55, 0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background-blend-mode: multiply,multiply;
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
 .dashboard-containerUBI {
-  background-image: linear-gradient(to top, #72b66b 0%, #12fff7 100%);
+  background-image: url("./assets/Black\ and\ noise.jpg");
   display: flex;
   flex-direction: column;
 }
-a {
-  color: white;
-}
+
 .titleCriptos {
   
   font-family: var(--primary-font);
@@ -620,7 +614,7 @@ a {
   color: var(--primary-color);
 }
 #last-price {
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: var(--primary-font);
   text-align: center;
 }
@@ -633,14 +627,16 @@ a {
 }
 .infoCriptos h2 {
   font-family: var(--primary-font);
-  color: white;
+  -webkit-text-stroke: 1px red;
+  color: transparent;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 2rem;
 }
 .infoCriptos h3 {
   font-family: var(--primary-font);
-  color: white;
+  -webkit-text-stroke: 1px red;
+  color: transparent;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 2rem;
@@ -654,11 +650,12 @@ li {
   font-family:var(--primary-font);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: .8rem;
+  color: whitesmoke;
 
 }
 span {
-  color: white;
+  color: var(--primary-color);
   font-style: italic;
 }
 .containerText {
@@ -689,7 +686,7 @@ span {
   margin-left: 2rem;
   margin-bottom: -0.6rem;
   text-indent: 0;
-  color: rgba(36, 36, 36, 0.701);
+  color: rgba(167, 167, 167, 0.701);
 }
 .epigrafe a {
   text-decoration: none !important;
@@ -722,9 +719,9 @@ height: 90vh;
   display: inline-block;
   font-size: 1em;
   font-family: var(--secondary-font);
-  color: white;
+  color: rgb(0, 0, 0);
   letter-spacing: 2px;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255) !important;
   padding: 8px;
   border-radius: 4px;
   text-decoration: none;
@@ -733,27 +730,17 @@ height: 90vh;
   text-transform: uppercase;
 }
 .back:hover {
-  background: black;
-  -webkit-text-stroke: .5px red;
+  background: rgb(0, 0, 0) !important;
+  -webkit-text-stroke: 1px red;
   color: transparent;
   letter-spacing: 2px;
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
 
 
-/* BITCOIN */
-
-.titleBitcoin {
-  font-family: var(--primary-font);
-  text-transform: uppercase;
-}
-
-p {
-  font-family: var(--secondary-font);
-  font-size: large;
-}
-
 /* Footer */
+
+
 
 footer {
   background-color: black;
@@ -770,4 +757,25 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+
+/*  Enviado  */
+
+.titleEnviado {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  -webkit-text-stroke: .1px red;
+  color: transparent;
+  padding: 1rem;
+  margin-top: 7rem;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  text-align: center;
+  height: 50vh;
+}
+@media (max-width: 699px) {
+  .titleEnviado {
+    font-size: 1.5rem;
+  }  
 }

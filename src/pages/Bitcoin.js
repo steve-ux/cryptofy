@@ -24,7 +24,7 @@ export default function BitcoinMain() {
       </div>
       <div className="containerText">
     <seccion className="infoCriptos">
-      <h2>La historia de <a href="https://bitcoin.org/es/" target="_blank" rel="noreferrer">Bitcoin</a></h2>
+      <h2>La historia de <a href="https://bitcoin.org/es/" target="_blank" rel="noreferrer" className="enlaces">Bitcoin</a></h2>
       <p>Bitcoin nación en 2008 en medio de una crisis económica que atravesaba el mundo. Su creador o creadores, del que no se sabe existencia, apareció al mundo bajo el seudónimo de <span>Satoshi Nakamoto</span> para proteger su identidad y asegurar el anonimato del proyecto. Su intención fue ser una revolución financiera y cambiar el modo en el que conocíamos las finanzas. Logrando su cometido, hoy Bitcoin, es considerado la <span>moneda del futuro.</span></p>
       <p>BTC, como se conoce su abreviatura, usa tecnología peer-to-peer o entre pares para operar sin una autoridad central o bancos, es decir, <span>descentralizada</span>; la gestión de las transacciones y la emisión de bitcoins es llevada a cabo de forma colectiva por la red y los mineros.</p>
       <p>Bitcoin es de código abierto; su diseño es público, nadie es dueño o controla Bitcoin y todo el mundo puede participar. Por medio de sus muchas propiedades únicas, Bitcoin permite usos interesantes no contemplados por ningún sistema de pagos anterior.</p>
@@ -66,7 +66,7 @@ export default function BitcoinMain() {
     </seccion>
     <div className="prefooter">
     <Link to="/Criptos" className="back">Volver a Criptos</Link>
-    <a href="#BTC"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem"}}/></a>
+    <a href="#BTC"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem", "filter":"invert(100%)"}}/></a>
     </div>
     </div>
     <Footer/>

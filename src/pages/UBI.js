@@ -70,7 +70,7 @@ export default function UBIMain() {
       <p>Una vez que haces todo esto, pasas a la <span>«Vouching phase»</span> (fase de aval). Algún otro usuario con un perfil ya registrado y aceptado tiene que aprobarlo (o, como suele decirse en los grupos hispanos de PoH, tiene que <span>«vouchearte»</span>). Esto significa que debe validar que te conoce y que tú eres un humano real.</p>
       <p>Si conoces a alguien ya registrado en Proof of Humanity, puedes pedirle que te «vouchee». Si no, ten en cuenta que hay comunidades virtuales donde los usuarios se verifican mutuamente sus identidades. Para verificar que la otra persona a la que nunca han visto realmente existe, suele emplearse una videollamada. En el grupo <a href="https://t.me/proofofhumanityenespanol" target="_blank" rel="noreferrer">Proof of Humanity en Español</a>, de Telegram, puedes conocer virtualmente a otros usuarios y, quizás, lograr ser verificado por alguien.</p>
       <img src={Metamask} alt="arte digital" width="200vw" style={{"float": "left", "padding": ".5rem", "border-radius": "2rem"}}/>
-      <p>Una vez que tienes tu perfil verificado por algún otro usuario, estarás durante tres días y medio como <span>«Pending registration»</span> (registro pendiente). Durante este período, cualquier persona verificada que observe algún error en tu perfil o considere que has cometido alguna falta en el registro, puede hacerlo saber. Si, efectivamente, hay algún incumplimiento a las reglas, tu registro será dado de baja y perderás el depósito de 0,125 ETH, que pasará al denunciante. La jerga usa el término <span>challengeado</span>, que viene del inglés “desafiado” o “impugnado”</p>
+      <p>Una vez que tienes tu perfil verificado por algún otro usuario, estarás durante tres días y medio como <span>«Pending registration»</span> (registro pendiente). Durante este período, cualquier persona verificada que observe algún error en tu perfil o considere que has cometido alguna falta en el registro, puede hacerlo saber. Si, efectivamente, hay algún incumplimiento a las reglas, tu registro será dado de baja y perderás el depósito de 0,125 ETH, que pasará al denunciante. La jerga usa el término <span>challengeado</span>, que viene del inglés “desafiado” o “impugnado”.</p>
       <p>Si nadie hace ningún reclamo sobre tu registro, pasados los tres días y medio verás que, en la parte superior de tu perfil se observa la leyenda <span>«Registred»</span> (registrado).</p>
       <p>¡Eso es todo! Significa que no quedan dudas de que eres un usuario real y, por eso, Proof of Humanity te recompensará con una renta básica de <span>1 UBI por hora</span>. Para recibir este ingreso, no tienes que hacer nada. Constantemente, en tu wallet MetaMask podrás ver como se va incrementando la cantidad de UBI que posees.</p>
       <p>Cuando quieras disponer de ese dinero para utilizarlo, puedes intercambiarlo por alguna otra criptomoneda o token, por ejemplo, alguna stablecoin. El exchange descentralizado (DEX) <span>Uniswap</span> es el lugar para ello.</p>
@@ -79,7 +79,7 @@ export default function UBIMain() {
     </seccion>
     <div className="prefooter">
     <Link to="/Criptos" className="back">Volver a Criptos</Link>
-    <a href="#UBI"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem"}}/></a>
+    <a href="#UBI"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem", "filter":"invert(100%)"}}/></a>
     </div>
     </div>
     <Footer/>

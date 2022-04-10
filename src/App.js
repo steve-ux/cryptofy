@@ -13,7 +13,8 @@ import Binance from "./pages/Binance";
 import Cardano from "./pages/Cardano";
 import Polkadot from "./pages/Polkadot";
 import UBI from "./pages/UBI";
-import AboutUs from "./pages/Sobre"; 
+import AboutUs from "./pages/Sobre";
+import Enviado from "./pages/Enviado"; 
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/Cardano" element={<Cardano />} />
         <Route path="/Polkadot" element={<Polkadot />} />
         <Route path="/UBI" element={<UBI />} />
+        <Route path="/Enviado" element={<Enviado />} />
       </Routes>
     </BrowserRouter>
   

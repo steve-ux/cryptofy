@@ -15,6 +15,8 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "recharts": "^2.1.9",
+    "sass": "^1.50.0",
+    "scss": "^0.2.4",
     "styled-components": "^5.3.5",
     "trading-chart": "0.0.1",
     "web-vitals": "^2.1.4"

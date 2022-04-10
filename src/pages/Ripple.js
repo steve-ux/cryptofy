@@ -67,7 +67,7 @@ export default function RippleMain() {
     </seccion>
     <div className="prefooter">
     <Link to="/Criptos" className="back">VOLVER A CRIPTOS</Link>
-    <a href="#XRP"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem"}}/></a>
+    <a href="#XRP"><img src={Arrow} alt="flecha arriba" width="45" style={{"padding": ".5rem", "margin-bottom": "-2.5rem", "filter":"invert(100%)"}}/></a>
     </div>
     </div>
     <Footer/>

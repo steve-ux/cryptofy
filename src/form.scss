@@ -1,0 +1,274 @@
+$white: rgba(255,255,255,0.3);
+
+body {
+  background-image: url("./assets/Black\ and\ noise.jpg");
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/fondo-wave3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60vw;
+}
+
+form {
+  background: rgba(0, 0, 0, 0);
+  padding: 3em;
+  height: 420px;
+  border-radius: 20px;
+  border-left: 1px solid $white;
+  border-top: 1px solid $white;
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  
+  p {
+    color: #fff;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 12px;
+    
+    &:hover {
+      text-shadow: 2px 2px 6px #00000040;
+    }
+    
+    &:active {
+      text-shadow: none;
+    }
+  }
+  textarea {
+    background: transparent;
+    width: 30vw;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid $white;
+    border-top: 1px solid $white;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    
+    &:hover {
+      background: rgba(255,255,255,0.1);
+      box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+    }
+  }
+  input {
+    background: transparent;
+    width: 30vw;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid $white;
+    border-top: 1px solid $white;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    
+    &:hover {
+      background: rgba(255,255,255,0.1);
+      box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+    }
+    
+    &[type="email"],
+    &[type="text"],
+    &[type="textarea"] {
+      
+      &:focus {
+        background: rgba(255,255,255,0.1);
+        box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+      }
+    }
+    }
+  }
+  button {
+    background: transparent;
+    width: 90px;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  
+  &:hover {
+    margin: 4px;
+    cursor: pointer;
+  }
+}
+
+::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.drop {
+  background: $white;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid $white;
+  border-top: 1px solid $white;
+  box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+  position: absolute;
+  transition: all 0.2s ease;
+  
+  &-1 {
+    height: 80px;
+    width: 80px;
+    top: -20px;
+    left: -40px;
+    z-index: -1;
+  }
+  
+  &-2 {
+    height: 80px;
+    width: 80px;
+    bottom: -30px;
+    right: -10px;
+  }
+  
+  &-3 {
+    height: 100px;
+    width: 100px;
+    bottom: 120px;
+    right: -50px;
+    z-index: -1;
+  }
+  
+  &-4 {
+    height: 120px;
+    width: 120px;
+    top: -60px;
+    right: -60px;
+  }
+}
+
+a,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.login-box form .btnSend {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: -10px;
+  letter-spacing: 4px
+}
+.login-box form .btnSend:hover {
+  cursor: pointer;
+        background: #03e9f4;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+form .btnSend span {
+  position: absolute;
+  display: block;
+}
+.btnSend span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+.btnSend span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+.btnSend span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+.btnSend span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}

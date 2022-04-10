@@ -58,7 +58,7 @@ function Dai() {
 			type: "bar",
 			barmode: "relative",
 			marker: {
-				color: "black",
+				color: "white",
 				opacity: 0.7,
 			},
 		};

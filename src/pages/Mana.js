@@ -165,7 +165,7 @@ export default function Decentraland() {
                 src={Arrow}
                 alt="flecha arriba"
                 width="45"
-                style={{ padding: ".5rem", "margin-bottom": "-2.5rem" }}
+                style={{ padding: ".5rem", "margin-bottom": "-2.5rem", "filter":"invert(100%)" }}
               />
             </a>
           </div>
