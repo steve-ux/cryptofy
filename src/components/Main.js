@@ -97,7 +97,7 @@ function Main() {
     <div className="content">
     <img className="criptoADA2" src={Cardano} alt="logo-cardano" />
       <h2>CARDANO</h2>
-      <p>Nace en 2015 por de uno de los cofundadores de Ethereum.</p>
+      <p>Nace en 2015 por uno de los cofundadores de Ethereum.</p>
       <Link to="/Cardano">SABER MÁS</Link>
     </div>
   </div>

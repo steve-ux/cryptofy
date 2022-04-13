@@ -101,7 +101,7 @@ export default function Decentraland() {
             <img
               src={Metaverso}
               alt="El metaverso"
-              width="280vw"
+              width="250vw"
               style={{ float: "left", padding: ".5rem", "border-radius": "2rem" }}
             />
             <p>

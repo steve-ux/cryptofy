@@ -625,6 +625,7 @@ a {
   font-family: var(--primary-font);
   text-align: center;
   text-transform: uppercase;
+  font-size: 1.2rem;
 }
 .containerChart {
   background-color: transparent;
