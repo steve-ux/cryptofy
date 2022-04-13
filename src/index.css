@@ -782,7 +782,7 @@ footer {
 .titleEnviado {
   font-family: var(--secondary-font);
   text-transform: uppercase;
-  -webkit-text-stroke: .1px red;
+  -webkit-text-stroke: .5px red;
   color: transparent;
   padding: 1rem;
   margin-top: 7rem;
@@ -794,5 +794,6 @@ footer {
 @media (max-width: 699px) {
   .titleEnviado {
     font-size: 1.5rem;
+    -webkit-text-stroke: 1px red;
   }  
 }
