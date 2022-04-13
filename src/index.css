@@ -268,7 +268,7 @@ a {
 .container .box {
   position: relative;
   width: 320px;
-  height: 400px;
+  height: 460px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -455,15 +455,17 @@ a {
 
 .container .box .content h2 {
   font-size: 2em;
-  color: #fff;
+  color: black;
   margin-bottom: 10px;
   font-family: var(--primary-font);
 }
 
 .container .box .content p {
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 10px;
   line-height: 1.4em;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
 }
 
 .container .box .content a {
@@ -488,55 +490,60 @@ a {
 }
 
 .criptoDoge {
-  width: 7vw;
+  width: 7rem;
 }
 .criptoBTC {
-  width: 8vw;
+  width: 8rem;
 }
 .criptoETH {
-  width: 7vw;
+  width: 7rem;
 }
 .criptoMana {
-  width: 8vw;
+  width: 8rem;
 }
 .criptoETC {
-  width: 7vw;
+  width: 7rem;
 }
 .criptoDai {
-  width: 7vw;
+  width: 7.5rem;
 }
 .criptoXRP {
-  width: 3vw;
+  width: 4rem;
 }
 .criptoXRP2 {
-  width: 5vw;
+  width: 3rem;
 }
 .criptoLTC {
-  width: 3.5vw;
+  width: 3.5rem;
 }
 .criptoLTC2 {
-  width: 7vw;
+  width: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 .criptoADA2 {
-  width: 12vw;
+  width: 7rem;
+  margin-bottom: 1.5rem;
 }
 .criptoDOT {
-  width: 3.5vw;
+  width: 3.5rem;
 }
 .criptoDOT2 {
-  width: 7vw;
+  width: 3rem;
+  margin-bottom: 1.5rem;
 }
 .criptoBNB {
-  width: 3.5vw;
+  width: 3.5rem;
 }
 .criptoBNB2 {
-  width: 7vw;
+  width: 3.5rem;
+  margin-bottom: 1.3rem;
 }
 .criptoUBI {
-  width: 3.5vw;
+  width: 3.5rem;
 }
 .criptoUBI2 {
-  width: 7vw;
+  width: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* CRYPTO CURRENCY */
@@ -617,6 +624,7 @@ a {
   color: rgb(255, 255, 255);
   font-family: var(--primary-font);
   text-align: center;
+  text-transform: uppercase;
 }
 .containerChart {
   background-color: transparent;
@@ -662,7 +670,7 @@ span {
   padding: 2rem;
 }
 .criptoETH2 {
-  width: 7vw;
+  width: 7rem;
   display: flex;
   align-content: center;
 }
@@ -735,6 +743,14 @@ height: 90vh;
   color: transparent;
   letter-spacing: 2px;
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+summary {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+summary:hover {
+  cursor:help;
 }
 
 

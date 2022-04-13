@@ -2,7 +2,7 @@ import Navbar from "../components/Navigator/Navbar";
 import Footer from "../components/Footer";
 import Api from "../cryptocurrencies/UBI";
 import UBI from "../assets/logo-ubi.png";
-import Form from "../assets/formPoH.jpg";
+import UBIArt from "../assets/ubi-art.png";
 import Metamask from "../assets/metamask-ubi.webp";
 import Arrow from "../assets/arrow-up.png";
 import { Link } from "react-router-dom";
@@ -49,7 +49,7 @@ export default function UBIMain() {
       <p>Una vez allí, haz clic en <span>«Start»</span>, en la parte superior derecha de la pantalla. Se te mostrará un listado de miles de personas ya registradas, cada una con su nombre, foto, una breve descripción y la fase del registro en la que se encuentran. Grandes figuras ya forman parte del registro en apoyo al proyecto, tal como <span>Marcos Galperín</span> (CEO Mercado Libre), el basquetbolista <span>Manu Ginóbili</span> y <span>Vitalik Buterin</span>, creador de la red Ethereum.</p>
       <p>Deberás contar con una dirección de Ethereum, dicha dirección que utilices quedará ligada a tu identidad y todos los datos que brindes en el formulario de registro serán públicos (esto incluye tu foto, un video con tu voz y, mediante un explorador de bloques, podrán verse las transacciones que hagas y hayas hecho con esa dirección). Esa información será imborrable durante todo el tiempo que la red Ethereum exista.</p>
       <p>A continuación debés vincular tu wallet de <span>Metamask</span> al sitio web, teniendo previamente instalado Metamask en tu navegador habitual (recomendamos Chrome).</p>
-      <img src={Form} alt="arte digital" width="500vw" style={{"float": "left", "padding": ".5rem", "border-radius": "2rem"}}/>
+      <img src={UBIArt} alt="arte digital" width="250vw" style={{"float": "left", "padding": ".5rem", "border-radius": "2rem"}}/>
       <p>Si estás convencido de que quieres continuar, entonces, lo siguiente que debes hacer es cliquear <span>«Submit Profile»</span> (Enviar perfil) en la parte superior de la pantalla. Se te abrirá un formulario que deberás completar.</p>
       <p>En <span>«Display Name»</span> eliges el nombre que quieres mostrar. Puede ser tu nombre verdadero o un apodo.</p>
       <p>En <span>«First Name»</span> pones tu nombre de pila y en «Last Name» tu apellido. No es necesario que sean tus datos reales.</p>

@@ -43,9 +43,10 @@ function Classic() {
 			yaxis: "y1",
 			type: "scatter",
 			mode: "lines+markers",
+			line: {color: 'red'},
 			marker: { 
-                color: "white", 
-                size: 2,                
+                color: "red", 
+                size: 5,                
              },
              
 		};
@@ -117,7 +118,7 @@ function Classic() {
 	return (
 		<div className='px-3 mt-1'>
 			{isLoading ? (
-				<h3 className='value animate__animated animate__flash animate__slow text-center text-primary text-white'> Cargando...</h3>
+				<h3 className='value animate__animated animate__flash animate__slow text-center text-primary text-white' id='last-price'> Cargando...</h3>
 			) : (
 				<>
 					<h2 id='last-price' className='text-center text-primary animate__animated'>

@@ -11,9 +11,9 @@ export default function BitcoinMain() {
     <>
     <div className="dashboard-containerBTC">
     <Navbar/>
-      <h1 className="titleCriptos" id="BTC">Bitcoin</h1>
+      <h1 className="titleCriptos" id="BTC">BITCOIN</h1>
       <div className="containerCriptoETH">
-      <img className="criptoETH2" src={Bitcoin} alt="logo-ethereum" />
+      <img className="criptoETH2" src={Bitcoin} alt="logo-bitcoin" />
       </div>
       <div className="containerChart">
     <Api/>
@@ -31,7 +31,7 @@ export default function BitcoinMain() {
       <h3>El White Paper de Bitcoin</h3>
       <p>El White Paper, o <span>Libro Blanco</span> en español, es un documento informativo que promueve o resalta las características de un producto, una solución o un servicio que ofrece u ofrecerá una empresa u organización. Toda criptomoneda seria comienza su camino publicando su white paper, donde explica su origen, su propósito y su road map (hoja de ruta) mostrando su planificación de desarrollo y objetivos a corto y largo plazo. A continuación puedes acceder a leer el de bitcoin, extraído de su website oficial, y así profundizar más en BTC:</p>
       <div className="containerPDF">
-      <embed src="https://bitcoin.org/files/bitcoin-paper/bitcoin_es_latam.pdf" type="application/pdf" width="100%" height="100%"></embed>
+      <embed src="https://bitcoin.org/files/bitcoin-paper/bitcoin_es_latam.pdf" type="application/pdf" width="80%" height="100%"></embed>
       </div>      
       <h3>¿Cómo funciona bitcoin?</h3>
       <p>Bitcoin es una moneda virtual o un medio de intercambio electrónico que sirve para adquirir productos y servicios como cualquier otra moneda.</p>
@@ -63,6 +63,27 @@ export default function BitcoinMain() {
       <p><span>3. Si no se dispone de un número de teléfono o dirección para contactar al responsable.</span> Las personas que se dedican a la captación ilegal de dinero acostumbran mantenerse en el anonimato, por lo que no suelen dar información para su contacto. Si no es clara la dirección física del centro de operación, no referencian un lugar público, o no ofrecen un número de teléfono, es una alarma y se debe sospechar.</p>
       <p><span>4. Si remuneran a los inversionistas por incluir a más personas en el supuesto ‘negocio’. </span> Esta es una clásica forma de captación ilegal de dinero usada en las estructuras piramidales o llamados esquemas Ponzi. No se aconseja fiar en una propuesta de negocio si como condición para la remuneración se exige la inclusión de personas que ingresen a participar. Además se suelen contradecir, este tipo de gente, al afirmar que su modelo no es un esquema piramidal.</p>
       <p><span>5. Si ofrecen rendimientos fijos por inversión.</span> Típicas promesas como: “le garantizamos el 5% de rendimiento semanal, 150% mensual, y 300% por dos meses” son sumamente sospechosas. Piense en el dicho: “cuando la limosna es grande, hasta el santo desconfía”. En un mercado tan volátil como el de las criptomonedas, asegurar ganancias sin pérdidas es para tener los ojos bien abiertos.</p>
+      <h3>Preguntas frecuentes</h3>
+      <details>
+      <summary>¿Cuánto bitcoin puedo comprar?</summary>
+      <p>La cantidad que quieras. Si bien 1 bitcoin no está al alcance de la mayoría, se pueden comprar fracciones de bitcoin. Es decir, en las casas de cambio, podés comprar desde $100 pesos. Satoshi es la menor medida de bitcoin, 1 bitcoin es igual a $100,000,000 satoshis, lo que $100, en abril 2022, equivaldrían a unos 0.0000100 satoshis (dependiendo cotización). Así puedes tener una porción de BTC e ir acumulando con el tiempo.</p>
+      </details>
+      <details>
+      <summary>¿Puedo perder dinero?</summary>
+      <p>Sinceramente, si. Invertir en criptomonedas puede ser un mercado muy volátil (a excepción de las <Link to="/Dai">stablecoin.</Link>) Por ello nunca hay que invertir los ahorros de nuestra vida, solo invertir lo que se esté dispuesto a perder y ser paciente. Si compraste $100 de BTC cuando estaba a 40.000 U$D y luego BTC baja a 35.000 U$D, y vas a vender, pierdes la diferencia. Si eres paciente y esperas a que suba por sobre el precio de tu compra, tendrás ganancias.</p>
+      </details>
+      <details>
+      <summary>¿Como compro bitcoins?</summary>
+      <p>Lo primero es elegir tu casa de cambio de preferencia. Recomiendo <a href="https://bitso.com/ar" target="_blank" rel="noreferrer">Bitso</a>, <a href="https://www.buenbit.com/es-ar" target="_blank" rel="noreferrer">Buenbit</a> o <a href="https://www.lemon.me/" target="_blank" rel="noreferrer">Lemon Cash</a> a cualquier principiante, ya que ahí podemos operar fácilmente y en nuestra moneda local. Bajás la aplicación, disponible para Android e IOS, y completás el registro. Se te pedirán datos personales y una selfie para validar tu identidad. Una vez verificada tu cuenta solo deberás transferir dinero desde MERCADO PAGO o tu cuenta bancaria. Compra tus primeras criptos y conviértete en un criptofan.</p>
+      </details>
+      <details>
+      <summary>¿Puedo minar bitcoins?</summary>
+      <p>Si, cualquiera puede convertirse en minero de bitcoin pero tendrás que tener en cuenta la alta inversión que se necesita para los equipos. Los <span>ASICS</span> son hardware especializado para minar bitcoin, dicho hardware consume una cantidad significativa de electricidad, por lo que deberás sumarlo a tu presupuesto por su gasto eléctrico. También generan mucho calor, es por ello que las grandes granjas de BTC se encuentran en los países más fríos, cercanos al ártico o el antártico. No es aconsejable tenerlos en zonas calurosas. Por último deberás tener en cuenta las legislaciones de tu país, suele ser necesario un permiso especial para ejercer este tipo de actividad y no caer en la ilegalidad.</p>
+      </details>
+    <details>
+      <summary>¿Es legal bitcoin?</summary>
+      <p>Si, bitcoin es una moneda que no es regulada por ninguna entidad bancaria o país, solo que no es considerada moneda fiduciaria. Países como <span>El Salvador</span>, siendo pioneros, ya consideran BTC moneda de curso legal, lo que permitirá a sus ciudadanos pagar impuestos o comprar en el negocio de la esquina con BTC, tanto como lo hacen con su moneda oficial. Es cuestión de tiempo, como ya lo han hecho algunos países de la región o el resto del mundo (Florida-USA, Rusia o Ucrania por ejemplo), que adopten bitcoin, la moneda del futuro.</p>
+      </details>
     </seccion>
     <div className="prefooter">
     <Link to="/Criptos" className="back">Volver a Criptos</Link>

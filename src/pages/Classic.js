@@ -44,7 +44,7 @@ export default function ClassicMain() {
       <p>Imagina que vas al cajero a sacar dinero, como has hecho tantas veces. Tienes 10.000 pesos de saldo y decides retirar 1.000 para realizar una compra cualquiera. En vez de terminar, le dices al cajero que quieres seguir realizando otras operaciones y consultas el saldo.</p>
       <p>Pese tener 1.000 en tu mano, el cajero te muestra en pantalla que sigues teniendo $ 10.000. Repites la operación para ver si ha sido una simple casualidad o no se ha refrescado el saldo. Vuelves a mirar el saldo y sigue apareciendo el saldo inicial.</p>
       <p>Así que sin retirar la tarjeta, porque se rompería la magia, sigues sacando 1.000 hasta que el cajero se queda vacío. Tú sigues teniendo $ 10.000 en tu cuenta, pero has sacado, pongamos, que $ 30.000.</p>
-      <p>The DAO tenía una vulnerabilidad en el smart contract que precisamente permitía esta acción. Engañaba al smart contrat para la retirada de los fondos por encima de la asignación sobre la que tenía derecho.</p>
+      <p>The DAO tenía una vulnerabilidad en el smart contract que precisamente permitía esta acción. Engañaba al smart contract para la retirada de los fondos por encima de la asignación sobre la que tenía derecho.</p>
       <h3>El código es ley</h3>
       <p>Uno de los principios por los que se desarrolló Ethereum Classic es el concepto de <span>The code is law</span> o <span>«el código es ley»</span>. Esto quiere decir que lo que sucede, ha sucedido y no hay vuelta atrás. Da igual si es por un problema en el código, un error por parte de los usuarios o cualquier otro incidente. Por esto mismo muchos se opusieron que se borrara The DAO y se restauraran los fondos.</p>
       <h3>¿Cómo funciona ETC?</h3>

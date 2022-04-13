@@ -35,11 +35,13 @@ function Sobre() {
         al mundo blockchain y las cryptocurrencies. La información proporcionada
         es una recopilación propia de diferentes fuentes, oficiales y no
         oficiales pero chequeada, filtrada y traducida a un lenguaje de fácil
-        comprensión.
+        comprensión. Pronto se agregarán más criptomonedas.
       </p>
       <p>El siguiente formulario está pensado para que puedas dejar tus sugerencias sobre el sitio, cambios, aportes, quejas o simplemente consultar si un negocio es o no fraudulento. En la sección de <Link to="/Bitcoin">Bitcoin</Link> podrás ver unos tips para estar alerta y detectar tempranamente estafas.</p>
       <h3>Contacto</h3>
       <Form/>
+      <br/>
+      <p><span>Descargo de responsabilidad.</span> La información proporcionada en este sitio web es meramente informativa, no constituye asesoramiento sobre inversiones, asesoramiento financiero, asesoramiento comercial ni ningún otro tipo de asesoramiento y no debes tratar el contenido del sitio web como tal. Criptofy no te recomienda que compres ni vendas criptomonedas sin informarte primero. Actúa según tu propio juicio y consulta con tu asesor financiero antes de tomar cualquier decisión sobre inversiones.</p>
       </seccion>
       </div>
       <Footer />

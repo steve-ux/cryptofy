@@ -36,7 +36,7 @@ const Ul = styled.ul`
   .nav li ul {
     display:none;
     position:absolute;
-    min-width:140px;
+    min-width:70px;
   }
   
   .nav li:hover > ul {

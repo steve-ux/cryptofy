@@ -52,7 +52,7 @@ function Main() {
     <div className="content">
     <img className="criptoETC" src={Classic} alt="logo-ethereum-classic" />
       <h2>ETHEREUM CLASSIC</h2>
-      <p>Ethereum original, luego tuvo una bifurcación.</p>
+      <p>Ethereum original, separados al nacer.</p>
       <Link to="/Classic">SABER MÁS</Link>
     </div>
   </div>
@@ -61,7 +61,7 @@ function Main() {
     <div className="content">
     <img className="criptoMana" src={Mana} alt="logo-mana" />
       <h2>MANA</h2>
-      <p>Pionera en el metaverso, la cripto de Decentraland proyecta futuro.</p>
+      <p>Pionera en el metaverso, Decentraland proyecta futuro.</p>
       <Link to="/Mana">SABER MÁS</Link>
     </div>
   </div>
@@ -88,7 +88,7 @@ function Main() {
     <div className="content">
     <img className="criptoLTC2" src={Litecoin} alt="logo-litecoin" />
       <h2>LITECOIN</h2>
-      <p> La tercera criptomoneda del criptomundo y una variación de Bitcoin.</p>
+      <p> La tercera moneda del criptomundo y una variación de Bitcoin.</p>
       <Link to="/Litecoin">SABER MÁS</Link>
     </div>
   </div>
@@ -97,7 +97,7 @@ function Main() {
     <div className="content">
     <img className="criptoADA2" src={Cardano} alt="logo-cardano" />
       <h2>CARDANO</h2>
-      <p>Fundada en 2015 por el cofundador de Ethereum, Charles Hoskinson.</p>
+      <p>Nace en 2015 por de uno de los cofundadores de Ethereum.</p>
       <Link to="/Cardano">SABER MÁS</Link>
     </div>
   </div>
@@ -106,7 +106,7 @@ function Main() {
     <div className="content">
     <img className="criptoDOT2" src={Polkadot} alt="logo-polkadot" />
       <h2>POLKADOT</h2>
-      <p>Facilita las transacciones autenticadas de una blockchain a otra.</p>
+      <p>Facilita las transacciones entre una blockchain y otra.</p>
       <Link to="/Polkadot">SABER MÁS</Link>
     </div>
   </div>
@@ -124,7 +124,7 @@ function Main() {
     <div className="content">
     <img className="criptoUBI2" src={UBI} alt="logo-uniSABERsal-basic-income" />
       <h2>UBI</h2>
-      <p>El primer token creado para una renta básica universal.</p>
+      <p>Primer token creado para una renta básica universal.</p>
       <Link to="/UBI">SABER MÁS</Link>
     </div>
   </div>
