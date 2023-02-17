@@ -39,14 +39,17 @@ function Sobre() {
       </p>
       <p>El siguiente formulario está pensado para que puedas dejar tus sugerencias sobre el sitio, cambios, aportes, quejas o simplemente consultar si un negocio es o no fraudulento. En la sección de <Link to="/Bitcoin">Bitcoin</Link> podrás ver unos tips para estar alerta y detectar tempranamente estafas.</p>
       <h3>Contacto</h3>
+      <div className="formText">
       <Form/>
       <br/>
-      <p><span>Descargo de responsabilidad.</span> La información proporcionada en este sitio web es meramente informativa, no constituye asesoramiento sobre inversiones, asesoramiento financiero, asesoramiento comercial ni ningún otro tipo de asesoramiento y no debes tratar el contenido del sitio web como tal. Criptofy no te recomienda que compres ni vendas criptomonedas sin informarte primero. Actúa según tu propio juicio y consulta con tu asesor financiero antes de tomar cualquier decisión sobre inversiones.</p>
+      <p className="parrafoForm"><span>Descargo de responsabilidad.</span> La información proporcionada en este sitio web es meramente informativa, no constituye asesoramiento sobre inversiones, asesoramiento financiero, asesoramiento comercial ni ningún otro tipo de asesoramiento y no debes tratar el contenido del sitio web como tal. Criptofy no te recomienda que compres ni vendas criptomonedas sin informarte primero. Actúa según tu propio juicio y consulta con tu asesor financiero antes de tomar cualquier decisión sobre inversiones.</p>
+      </div>
       </seccion>
       </div>
       <Footer />
     </div>
   );
 }
+
 
 export default Sobre;
